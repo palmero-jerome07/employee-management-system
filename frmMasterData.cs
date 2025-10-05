@@ -194,6 +194,11 @@ namespace EmployeeManagementSystem
         private void btnEditData_Click(object sender, EventArgs e)
         {
             frmAddEmployee openForm = new frmAddEmployee();
+            if (frmMasterData.selectedTransaction == null || frmMasterData.selectedTransaction == "0" || frmMasterData.selectedTransaction == "")
+            {
+                MessageBox.Show("Please select a row to edit.", "No Row Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             openForm.button1.Visible = true;
             openForm.button2.Visible = true;
             openForm.button3.Visible = true;
@@ -202,7 +207,7 @@ namespace EmployeeManagementSystem
             openForm.StartPosition = FormStartPosition.CenterScreen;
             openForm.panel1.MouseDown += openForm.panel1_MouseDown;
             openForm.pictureBox1.MouseDown += openForm.pictureBox1_MouseDown;
-            openForm.lblHeader.MouseDown += openForm.lblHeader_MouseDown;
+            openForm.lblHeader.MouseDown += openForm.lblHeader_MouseDown; 
             openForm.ShowDialog();
             this.refreshData();
         }
