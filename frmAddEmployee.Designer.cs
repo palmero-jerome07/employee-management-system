@@ -243,7 +243,6 @@
             // cmbSection
             // 
             cmbSection.AutoCompleteCustomSource.AddRange(new string[] { "IT", "CS", "EMC-DA", "CPE", "EE", "IE", "ECE" });
-            cmbSection.DropDownStyle = ComboBoxStyle.Simple;
             cmbSection.FlatStyle = FlatStyle.Popup;
             cmbSection.FormattingEnabled = true;
             cmbSection.Items.AddRange(new object[] { "IT Dept.", "CS Dept.", "EMC-DA Dept.", "CPE Dept.", "EE Dept.", "IE Dept.", "ECE Dept." });
