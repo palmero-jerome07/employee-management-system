@@ -56,14 +56,14 @@ namespace EmployeeManagementSystem
                 string dbEmail, dbPassword;
 
                 int dtCount = CRUD.CRUD.dt.Rows.Count;
-                
-                if(isAuthenticated && dtCount > 0)
+
+                if (isAuthenticated && dtCount > 0)
                 {
                     dbEmail = CRUD.CRUD.dt.Rows[0]["Username"].ToString();
                     dbPassword = CRUD.CRUD.dt.Rows[0]["Password"].ToString();
 
 
-                    if(dbEmail.Equals(username, StringComparison.Ordinal) && dbPassword.Equals(password, StringComparison.Ordinal))
+                    if (dbEmail.Equals(username, StringComparison.Ordinal) && dbPassword.Equals(password, StringComparison.Ordinal))
                     {
                         fullname = CRUD.CRUD.dt.Rows[0]["FullName"].ToString();
                         section = CRUD.CRUD.dt.Rows[0]["Section"].ToString();
@@ -75,17 +75,62 @@ namespace EmployeeManagementSystem
                         frmMotherForm openForm = new frmMotherForm();
                         openForm.ShowDialog();
                         this.Close();
-                    } else
+                    }
+                    else
                     {
                         MessageBox.Show("Invalid username or password.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
-                } else
+                }
+                else
                 {
                     MessageBox.Show("No user found.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
             }
+        }
+
+        private void pnlHead_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Common.ReleaseCapture();
+                Common.SendMessage(Handle, Common.WM_NCLBUTTONDOWN, Common.HT_CAPTION, 0);
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnClose_MouseEnter(object sender, EventArgs e)
+        {
+            btnClose.BackColor = Color.FromArgb(231, 76, 60);
+            btnClose.ForeColor = Color.White;
+        }
+
+        private void btnClose_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose.BackColor = Color.Transparent;
+            btnClose.ForeColor = Color.Black;
         }
     }
 }
