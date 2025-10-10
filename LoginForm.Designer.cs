@@ -36,6 +36,7 @@
             btnLogin = new Button();
             linklblCreateAccount = new LinkLabel();
             pnlHead = new Panel();
+            label1 = new Label();
             btnMinimize = new Button();
             btnMaximize = new Button();
             btnClose = new Button();
@@ -121,15 +122,28 @@
             // pnlHead
             // 
             pnlHead.BackColor = Color.Teal;
+            pnlHead.Controls.Add(label1);
             pnlHead.Controls.Add(btnMinimize);
             pnlHead.Controls.Add(btnMaximize);
             pnlHead.Controls.Add(btnClose);
             pnlHead.Dock = DockStyle.Top;
             pnlHead.Location = new Point(0, 0);
             pnlHead.Name = "pnlHead";
-            pnlHead.Size = new Size(485, 28);
+            pnlHead.Size = new Size(488, 28);
             pnlHead.TabIndex = 8;
             pnlHead.MouseDown += pnlHead_MouseDown;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(5, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(215, 15);
+            label1.TabIndex = 11;
+            label1.Text = "Employee Management System Login";
+            label1.MouseDown += label1_MouseDown;
             // 
             // btnMinimize
             // 
@@ -137,7 +151,7 @@
             btnMinimize.FlatAppearance.BorderSize = 0;
             btnMinimize.FlatStyle = FlatStyle.Flat;
             btnMinimize.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMinimize.Location = new Point(359, 0);
+            btnMinimize.Location = new Point(362, 0);
             btnMinimize.Name = "btnMinimize";
             btnMinimize.Size = new Size(42, 28);
             btnMinimize.TabIndex = 10;
@@ -151,7 +165,7 @@
             btnMaximize.FlatAppearance.BorderSize = 0;
             btnMaximize.FlatStyle = FlatStyle.Flat;
             btnMaximize.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMaximize.Location = new Point(401, 0);
+            btnMaximize.Location = new Point(404, 0);
             btnMaximize.Name = "btnMaximize";
             btnMaximize.Size = new Size(42, 28);
             btnMaximize.TabIndex = 9;
@@ -165,7 +179,7 @@
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnClose.Location = new Point(443, 0);
+            btnClose.Location = new Point(446, 0);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(42, 28);
             btnClose.TabIndex = 0;
@@ -180,7 +194,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(43, 77, 95);
-            ClientSize = new Size(485, 309);
+            ClientSize = new Size(488, 311);
             Controls.Add(pnlHead);
             Controls.Add(linklblCreateAccount);
             Controls.Add(btnLogin);
@@ -189,12 +203,14 @@
             Controls.Add(lblPassword);
             Controls.Add(lblUsername);
             Controls.Add(lblHeader);
+            Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
             pnlHead.ResumeLayout(false);
+            pnlHead.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -212,5 +228,6 @@
         private Button btnMinimize;
         private Button btnMaximize;
         private Button btnClose;
+        private Label label1;
     }
 }

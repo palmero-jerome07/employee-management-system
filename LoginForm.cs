@@ -132,5 +132,14 @@ namespace EmployeeManagementSystem
             btnClose.BackColor = Color.Transparent;
             btnClose.ForeColor = Color.Black;
         }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Common.ReleaseCapture();
+                Common.SendMessage(Handle, Common.WM_NCLBUTTONDOWN, Common.HT_CAPTION, 0);
+            }
+        }
     }
 }
