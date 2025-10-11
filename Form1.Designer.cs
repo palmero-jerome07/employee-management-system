@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMotherForm));
             pnlSideMenu = new Panel();
+            btnSettings = new Button();
             lblFooter = new Label();
             btnAddEmp = new Button();
             btnMasterData = new Button();
@@ -67,6 +68,7 @@
             resources.ApplyResources(pnlSideMenu, "pnlSideMenu");
             pnlSideMenu.BackColor = Color.FromArgb(43, 77, 95);
             pnlSideMenu.BorderStyle = BorderStyle.FixedSingle;
+            pnlSideMenu.Controls.Add(btnSettings);
             pnlSideMenu.Controls.Add(lblFooter);
             pnlSideMenu.Controls.Add(btnAddEmp);
             pnlSideMenu.Controls.Add(btnMasterData);
@@ -80,6 +82,23 @@
             TTminimize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip4"));
             TTversion.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip5"));
             TTmaximize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip6"));
+            // 
+            // btnSettings
+            // 
+            resources.ApplyResources(btnSettings, "btnSettings");
+            btnSettings.BackColor = Color.FromArgb(60, 173, 150);
+            btnSettings.Cursor = Cursors.Hand;
+            btnSettings.ForeColor = Color.White;
+            btnSettings.Name = "btnSettings";
+            TTminimize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
+            TTmaximize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip1"));
+            TTversion.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip2"));
+            TTclose.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip3"));
+            TTmasterData.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip4"));
+            TTfooter.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip5"));
+            TTinsertUpdateEmployee.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip6"));
+            btnSettings.UseVisualStyleBackColor = false;
+            btnSettings.Click += btnSettings_Click;
             // 
             // lblFooter
             // 
@@ -410,5 +429,6 @@
         private Label lblSection;
         private Label lblFullName;
         private Label lblWelcome;
+        private Button btnSettings;
     }
 }

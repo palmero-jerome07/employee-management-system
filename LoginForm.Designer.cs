@@ -121,7 +121,7 @@
             // 
             // pnlHead
             // 
-            pnlHead.BackColor = Color.Teal;
+            pnlHead.BackColor = Color.FromArgb(39, 58, 74);
             pnlHead.Controls.Add(label1);
             pnlHead.Controls.Add(btnMinimize);
             pnlHead.Controls.Add(btnMaximize);
@@ -162,6 +162,7 @@
             // btnMaximize
             // 
             btnMaximize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMaximize.Enabled = false;
             btnMaximize.FlatAppearance.BorderSize = 0;
             btnMaximize.FlatStyle = FlatStyle.Flat;
             btnMaximize.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);

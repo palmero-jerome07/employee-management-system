@@ -17,7 +17,7 @@ namespace EmployeeManagementSystem
             InitializeComponent();
             lblFullName.Text = LoginForm.fullname;
             lblSection.Text = LoginForm.section;
-            lblAge.Text = LoginForm.age; 
+            lblAge.Text = LoginForm.age;
             lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + LoginForm.fullname;
         }
 
@@ -88,6 +88,10 @@ namespace EmployeeManagementSystem
         {
             setDetailsDefault();
             OpenChildForm(new frmAddEmployee());
+        }
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmSettings());
         }
 
         public void setDetailsDefault()
@@ -184,5 +188,7 @@ namespace EmployeeManagementSystem
         {
             btnMinimize.BackColor = Color.Transparent;
         }
+
+
     }
 }
