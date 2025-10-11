@@ -182,15 +182,6 @@
   <data name="btnMasterData.ToolTip4" xml:space="preserve">
     <value>Show Master Data</value>
   </data>
-  <data name="pnlInformation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="pnlInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 102</value>
-  </data>
-  <data name="pnlSideMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 322</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblAge.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -233,6 +224,15 @@
   </data>
   <data name="lblFullName.Text" xml:space="preserve">
     <value>&lt;FULLNAME&gt;</value>
+  </data>
+  <data name="pnlInformation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 102</value>
+  </data>
+  <data name="pnlSideMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 322</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -336,12 +336,6 @@
   <data name="btnMinimize.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="pnlStage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 51</value>
-  </data>
-  <data name="pnlStage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>557, 322</value>
-  </data>
   <data name="lblWelcome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -354,6 +348,12 @@
   <data name="lblWelcome.Text" xml:space="preserve">
     <value>WELCOME TO EMPLOYEE 
 MANAGEMENT SYSTEM</value>
+  </data>
+  <data name="pnlStage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 51</value>
+  </data>
+  <data name="pnlStage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>557, 322</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

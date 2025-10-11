@@ -47,7 +47,6 @@
             txtAge = new TextBox();
             txtFullName = new TextBox();
             txtUserName = new TextBox();
-            panel1 = new Panel();
             tpageSectionRegistration = new TabPage();
             tpage.SuspendLayout();
             tpageUserRegistration.SuspendLayout();
@@ -70,7 +69,6 @@
             // 
             tpageUserRegistration.Controls.Add(dgvUsers);
             tpageUserRegistration.Controls.Add(pnlSideBar);
-            tpageUserRegistration.Controls.Add(panel1);
             tpageUserRegistration.Location = new Point(4, 24);
             tpageUserRegistration.Name = "tpageUserRegistration";
             tpageUserRegistration.Padding = new Padding(3);
@@ -84,10 +82,10 @@
             dgvUsers.BackgroundColor = Color.FromArgb(224, 224, 224);
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsers.Dock = DockStyle.Fill;
-            dgvUsers.Location = new Point(263, 31);
+            dgvUsers.Location = new Point(263, 3);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.ShowCellToolTips = false;
-            dgvUsers.Size = new Size(777, 472);
+            dgvUsers.Size = new Size(777, 500);
             dgvUsers.TabIndex = 2;
             // 
             // pnlSideBar
@@ -109,9 +107,9 @@
             pnlSideBar.Controls.Add(txtFullName);
             pnlSideBar.Controls.Add(txtUserName);
             pnlSideBar.Dock = DockStyle.Left;
-            pnlSideBar.Location = new Point(3, 31);
+            pnlSideBar.Location = new Point(3, 3);
             pnlSideBar.Name = "pnlSideBar";
-            pnlSideBar.Size = new Size(260, 472);
+            pnlSideBar.Size = new Size(260, 500);
             pnlSideBar.TabIndex = 1;
             // 
             // lblNumber
@@ -246,15 +244,6 @@
             txtUserName.Size = new Size(205, 23);
             txtUserName.TabIndex = 0;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(39, 58, 74);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1037, 28);
-            panel1.TabIndex = 0;
-            // 
             // tpageSectionRegistration
             // 
             tpageSectionRegistration.Location = new Point(4, 24);
@@ -288,7 +277,6 @@
         private TabPage tpageSectionRegistration;
         private DataGridView dgvUsers;
         private Panel pnlSideBar;
-        private Panel panel1;
         private Label lblConPass;
         private Label lblPassword;
         private Label lblAge;
