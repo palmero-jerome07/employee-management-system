@@ -80,17 +80,20 @@ namespace EmployeeManagementSystem
 
         private void btnMasterData_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(748, 422);
             setDetailsDefault();
             OpenChildForm(new frmMasterData());
         }
 
         private void btnAddEmp_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(748, 422);
             setDetailsDefault();
             OpenChildForm(new frmAddEmployee());
         }
         private void btnSettings_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(1120, 422);
             OpenChildForm(new frmSettings());
         }
 
