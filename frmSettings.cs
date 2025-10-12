@@ -75,6 +75,19 @@ namespace EmployeeManagementSystem
 
         private void btnExecute_Click_1(object sender, EventArgs e)
         {
+            if(string.IsNullOrWhiteSpace(txtUserName.Text) ||
+                string.IsNullOrWhiteSpace(txtPassword.Text) ||
+                string.IsNullOrWhiteSpace(txtConfirmPassword.Text) ||
+                string.IsNullOrWhiteSpace(cbSection.Text) ||
+                string.IsNullOrWhiteSpace(txtAge.Text) ||
+                string.IsNullOrWhiteSpace(txtFullName.Text))
+            {
+                MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+
             DialogResult result = MessageBox.Show("Are you sure you want to register?", "Confirmation",
                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
