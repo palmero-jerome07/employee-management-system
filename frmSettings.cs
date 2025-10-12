@@ -140,5 +140,15 @@ namespace EmployeeManagementSystem
             lblMatch.Text = "❌ Match";
             lblMatch.ForeColor = Color.Red;
         }
+
+        private void btnExecute_MouseEnter(object sender, EventArgs e)
+        {
+            btnExecute.BackColor = Color.FromArgb(14, 102, 85);
+        }
+
+        private void btnExecute_MouseLeave(object sender, EventArgs e)
+        {
+            btnExecute.BackColor = Color.FromArgb(26, 188, 156);
+        }
     }
 }

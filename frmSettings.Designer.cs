@@ -100,7 +100,7 @@
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -234,14 +234,18 @@
             // 
             // btnExecute
             // 
+            btnExecute.BackColor = Color.FromArgb(60, 173, 150);
+            btnExecute.FlatStyle = FlatStyle.Flat;
             btnExecute.ForeColor = Color.Black;
             btnExecute.Location = new Point(156, 398);
             btnExecute.Name = "btnExecute";
             btnExecute.Size = new Size(75, 26);
             btnExecute.TabIndex = 6;
             btnExecute.Text = "Execute";
-            btnExecute.UseVisualStyleBackColor = true;
+            btnExecute.UseVisualStyleBackColor = false;
             btnExecute.Click += btnExecute_Click_1;
+            btnExecute.MouseEnter += btnExecute_MouseEnter;
+            btnExecute.MouseLeave += btnExecute_MouseLeave;
             // 
             // txtConfirmPassword
             // 
