@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -75,7 +76,9 @@ namespace EmployeeManagementSystem
 
         private void btnExecute_Click_1(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(txtUserName.Text) ||
+            //Proper Validations
+
+            if (string.IsNullOrWhiteSpace(txtUserName.Text) ||
                 string.IsNullOrWhiteSpace(txtPassword.Text) ||
                 string.IsNullOrWhiteSpace(txtConfirmPassword.Text) ||
                 string.IsNullOrWhiteSpace(cbSection.Text) ||
@@ -85,19 +88,57 @@ namespace EmployeeManagementSystem
                 MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            else if (txtPassword.Text.Length < 8)
+            {
+                MessageBox.Show("Password must be at least 8 characters long.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"\d"))
+            {
+                MessageBox.Show("Password must contain at least one number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (txtPassword.Text != txtConfirmPassword.Text)
+            {
+                MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (CRUD.CRUD.RETRIEVESINGLE("Select * From [tblUsers] where [UserName] = '" + txtUserName.Text + "'"))
+            {
+                MessageBox.Show("Username already exists. Please choose a different username.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
 
 
             DialogResult result = MessageBox.Show("Are you sure you want to register?", "Confirmation",
-                       MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
-                string query = "Insert into [Users] ([UserName], [Password],[Section],[Age], [FullName]) values ('" + txtUserName.Text + "','" + txtPassword.Text + "','" + cbSection.Text + "','" + txtAge.Text + "','" + txtFullName.Text + "')";
+                string query = "Insert into [tblUsers] ([UserName], [Password],[Section],[Age], [FullName]) values ('" + txtUserName.Text + "','" + txtPassword.Text + "','" + cbSection.Text + "','" + txtAge.Text + "','" + txtFullName.Text + "')";
                 CRUD.CRUD.CUD(query);
                 MessageBox.Show("Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [Users] ");
+                clearDetails();
+                CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [tblUsers] ");
             }
+            else if (result == DialogResult.No)
+            {
+                return;
+            }
+        }
+        private void clearDetails()
+        {
+            txtUserName.Clear();
+            txtPassword.Clear();
+            txtConfirmPassword.Clear();
+            cbSection.Text = "";
+            txtAge.Clear();
+            txtFullName.Clear();
+            lblNumber.Text = "❌ Number";
+            lblNumber.ForeColor = Color.Red;
+            lblMatch.Text = "❌ Match";
+            lblMatch.ForeColor = Color.Red;
         }
     }
 }
