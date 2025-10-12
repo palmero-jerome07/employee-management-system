@@ -60,7 +60,20 @@ namespace EmployeeManagementSystem
             }
         }
 
-        private void btnExecute_Click(object sender, EventArgs e)
+        private void frmSettings_Load_1(object sender, EventArgs e)
+        {
+            CRUD.CRUD.RETRIEVECBO(cbSection, "SELECT [ID], [Section] FROM [tblSection] ORDER BY [Section] asc", "Section", "ID");
+            CRUD.CRUD.RETRIEVEDTG(dgvUsers, "SELECT * FROM [tblUsers]");
+            cbSection.Text = "";
+
+            lblNumber.Text = "❌ Number";
+            lblNumber.ForeColor = Color.Red;
+
+            lblMatch.Text = "❌ Match";
+            lblMatch.ForeColor = Color.Red;
+        }
+
+        private void btnExecute_Click_1(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to register?", "Confirmation",
                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -72,19 +85,6 @@ namespace EmployeeManagementSystem
                 MessageBox.Show("Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [Users] ");
             }
-        }
-
-        private void frmSettings_Load_1(object sender, EventArgs e)
-        {
-            CRUD.CRUD.RETRIEVECBO(cbSection, "SELECT [ID], [Section] FROM [tblSection] ORDER BY [Section] asc", "Section", "ID");
-            CRUD.CRUD.RETRIEVEDTG(dgvUsers, "SELECT * FROM [tblUsers]");
-            cbSection.Text = "";
-
-            lblNumber.Text = "❌ Number";
-            lblNumber.ForeColor = Color.Red;
-
-            lblMatch.Text = "✓ Green";
-            lblMatch.ForeColor = Color.Green;
         }
     }
 }
