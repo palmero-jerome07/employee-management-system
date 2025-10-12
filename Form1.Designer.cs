@@ -89,6 +89,7 @@
             btnSettings.BackColor = Color.FromArgb(60, 173, 150);
             btnSettings.Cursor = Cursors.Hand;
             btnSettings.ForeColor = Color.White;
+            btnSettings.Image = Properties.Resources.settings;
             btnSettings.Name = "btnSettings";
             TTminimize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
             TTmaximize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip1"));

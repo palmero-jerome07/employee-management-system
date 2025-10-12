@@ -74,10 +74,11 @@ namespace EmployeeManagementSystem
             }
         }
 
-        private void frmSettings_Load(object sender, EventArgs e)
+        private void frmSettings_Load_1(object sender, EventArgs e)
         {
             CRUD.CRUD.RETRIEVECBO(cbSection, "SELECT [ID], [Section] FROM [tblSection] ORDER BY [Section] asc", "Section", "ID");
-            CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [Users]");
+            CRUD.CRUD.RETRIEVEDTG(dgvUsers, "SELECT * FROM [tblUsers]");
+            cbSection.Text = "";
 
             lblNumber.Text = "❌ Number";
             lblNumber.ForeColor = Color.Red;

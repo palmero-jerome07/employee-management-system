@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             tpage = new TabControl();
             tpageUserRegistration = new TabPage();
+            dgvUsers = new DataGridView();
             pnlSideBar = new Panel();
             lblNumber = new Label();
             lblMatch = new Label();
@@ -47,12 +50,13 @@
             txtFullName = new TextBox();
             txtUserName = new TextBox();
             panel1 = new Panel();
-            dgvUsers = new DataGridView();
+            lblHeading = new Label();
             tpageSectionRegistration = new TabPage();
             tpage.SuspendLayout();
             tpageUserRegistration.SuspendLayout();
-            pnlSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
+            pnlSideBar.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // tpage
@@ -69,9 +73,9 @@
             // tpageUserRegistration
             // 
             tpageUserRegistration.BackColor = Color.FromArgb(39, 58, 74);
+            tpageUserRegistration.Controls.Add(dgvUsers);
             tpageUserRegistration.Controls.Add(pnlSideBar);
             tpageUserRegistration.Controls.Add(panel1);
-            tpageUserRegistration.Controls.Add(dgvUsers);
             tpageUserRegistration.Cursor = Cursors.Hand;
             tpageUserRegistration.ForeColor = Color.White;
             tpageUserRegistration.Location = new Point(4, 24);
@@ -80,6 +84,34 @@
             tpageUserRegistration.Size = new Size(1043, 506);
             tpageUserRegistration.TabIndex = 0;
             tpageUserRegistration.Text = "User Registration";
+            // 
+            // dgvUsers
+            // 
+            dgvUsers.BackgroundColor = Color.FromArgb(245, 246, 250);
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvUsers.Dock = DockStyle.Fill;
+            dgvUsers.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvUsers.EnableHeadersVisualStyles = false;
+            dgvUsers.Location = new Point(263, 31);
+            dgvUsers.Name = "dgvUsers";
+            dgvUsers.Size = new Size(777, 472);
+            dgvUsers.TabIndex = 4;
             // 
             // pnlSideBar
             // 
@@ -101,9 +133,9 @@
             pnlSideBar.Controls.Add(txtFullName);
             pnlSideBar.Controls.Add(txtUserName);
             pnlSideBar.Dock = DockStyle.Left;
-            pnlSideBar.Location = new Point(3, 34);
+            pnlSideBar.Location = new Point(3, 31);
             pnlSideBar.Name = "pnlSideBar";
-            pnlSideBar.Size = new Size(260, 469);
+            pnlSideBar.Size = new Size(260, 472);
             pnlSideBar.TabIndex = 1;
             // 
             // lblNumber
@@ -252,23 +284,24 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(39, 58, 74);
+            panel1.BackColor = Color.FromArgb(43, 77, 95);
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(lblHeading);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1037, 31);
+            panel1.Size = new Size(1037, 28);
             panel1.TabIndex = 3;
             // 
-            // dgvUsers
+            // lblHeading
             // 
-            dgvUsers.BackgroundColor = Color.FromArgb(224, 224, 224);
-            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Dock = DockStyle.Fill;
-            dgvUsers.Location = new Point(3, 3);
-            dgvUsers.Name = "dgvUsers";
-            dgvUsers.ShowCellToolTips = false;
-            dgvUsers.Size = new Size(1037, 500);
-            dgvUsers.TabIndex = 2;
+            lblHeading.AutoSize = true;
+            lblHeading.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHeading.Location = new Point(31, 3);
+            lblHeading.Name = "lblHeading";
+            lblHeading.Size = new Size(126, 20);
+            lblHeading.TabIndex = 1;
+            lblHeading.Text = "User Registration";
             // 
             // tpageSectionRegistration
             // 
@@ -290,11 +323,14 @@
             Controls.Add(tpage);
             Name = "frmSettings";
             Text = "Settings";
+            Load += frmSettings_Load_1;
             tpage.ResumeLayout(false);
             tpageUserRegistration.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             pnlSideBar.ResumeLayout(false);
             pnlSideBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -303,7 +339,6 @@
         private TabControl tpage;
         private TabPage tpageUserRegistration;
         private TabPage tpageSectionRegistration;
-        private DataGridView dgvUsers;
         private Panel pnlSideBar;
         private Label lblConPass;
         private Label lblPassword;
@@ -321,5 +356,7 @@
         private Label lblNumber;
         private Label lblMatch;
         private Panel panel1;
+        private Label lblHeading;
+        private DataGridView dgvUsers;
     }
 }

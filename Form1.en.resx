@@ -135,7 +135,7 @@
     <value>189, 46</value>
   </data>
   <data name="btnSettings.Text" xml:space="preserve">
-    <value>SETTINGS</value>
+    <value>  SETTINGS      </value>
   </data>
   <data name="btnSettings.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -167,7 +167,7 @@
     <value>189, 46</value>
   </data>
   <data name="btnAddEmp.Text" xml:space="preserve">
-    <value>ADD EMPLOYEE</value>
+    <value> ADD EMPLOYEE</value>
   </data>
   <data name="btnAddEmp.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
