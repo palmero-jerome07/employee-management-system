@@ -112,6 +112,7 @@
             linklblCreateAccount.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             linklblCreateAccount.ForeColor = Color.White;
             linklblCreateAccount.LinkColor = Color.White;
+            linklblCreateAccount.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Polite;
             linklblCreateAccount.Location = new Point(311, 262);
             linklblCreateAccount.Name = "linklblCreateAccount";
             linklblCreateAccount.Size = new Size(103, 15);
