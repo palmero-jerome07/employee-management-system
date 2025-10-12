@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EmployeeManagementSystem
 {
-    public partial class LoginForm : Form
+    public partial class frmLoginForm : Form
     {
-        public LoginForm()
+        public frmLoginForm()
         {
             InitializeComponent();
         }

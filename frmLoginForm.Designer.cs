@@ -1,6 +1,6 @@
 ﻿namespace EmployeeManagementSystem
 {
-    partial class LoginForm
+    partial class frmLoginForm
     {
         /// <summary>
         /// Required designer variable.

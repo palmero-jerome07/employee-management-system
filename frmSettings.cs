@@ -87,6 +87,31 @@ namespace EmployeeManagementSystem
             {
                 MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            } else if (txtUserName.Text.Contains(" "))
+            {
+                MessageBox.Show("Username cannot contain spaces.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }else if (txtPassword.Text.Contains(" "))
+            {
+                MessageBox.Show("Password cannot contain spaces.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            } else if (!System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"[a-z]"))
+            {
+                MessageBox.Show("Password must contain at least one lowercase letter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"[A-Z]"))
+            {
+                MessageBox.Show("Password must contain at least one uppercase letter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            } else if (string.IsNullOrWhiteSpace(txtAge.Text) || int.Parse(txtAge.Text) < 18 || int.Parse(txtAge.Text) > 65)
+            {
+                MessageBox.Show("Please enter a valid age between 18 and 65.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            } else if (string.IsNullOrWhiteSpace(txtFullName.Text) || txtFullName.Text.Length < 3)
+            {
+                MessageBox.Show("Please enter a valid full name with at least 3 characters.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             else if (txtPassword.Text.Length < 8)
             {
@@ -107,12 +132,9 @@ namespace EmployeeManagementSystem
             {
                 MessageBox.Show("Username already exists. Please choose a different username.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
-
-
-
+            } 
             DialogResult result = MessageBox.Show("Are you sure you want to register?", "Confirmation",
-                               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {

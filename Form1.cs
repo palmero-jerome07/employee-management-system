@@ -15,10 +15,10 @@ namespace EmployeeManagementSystem
         public frmMotherForm()
         {
             InitializeComponent();
-            lblFullName.Text = LoginForm.fullname;
-            lblSection.Text = LoginForm.section;
-            lblAge.Text = LoginForm.age;
-            lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + LoginForm.fullname;
+            lblFullName.Text = frmLoginForm.fullname;
+            lblSection.Text = frmLoginForm.section;
+            lblAge.Text = frmLoginForm.age;
+            lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + frmLoginForm.fullname;
         }
 
 
