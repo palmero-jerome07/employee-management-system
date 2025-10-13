@@ -103,7 +103,7 @@
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -341,6 +341,7 @@
             AutoScroll = true;
             ClientSize = new Size(1051, 534);
             Controls.Add(tpage);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "frmSettings";
             Text = "Settings";
             Load += frmSettings_Load_1;
