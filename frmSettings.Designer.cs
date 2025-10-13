@@ -103,7 +103,7 @@
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -256,7 +256,7 @@
             txtConfirmPassword.Location = new Point(23, 305);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PasswordChar = '*';
-            txtConfirmPassword.PlaceholderText = "Re-enter your created password";
+            txtConfirmPassword.PlaceholderText = "Confirm your password";
             txtConfirmPassword.Size = new Size(205, 23);
             txtConfirmPassword.TabIndex = 5;
             txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
