@@ -52,6 +52,7 @@
             txtFullName = new TextBox();
             txtUserName = new TextBox();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             lblHeading = new Label();
             tpageSectionRegistration = new TabPage();
             tpage.SuspendLayout();
@@ -60,6 +61,7 @@
             pnlSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)connectionBindingSource).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tpage
@@ -111,9 +113,9 @@
             dgvUsers.Dock = DockStyle.Fill;
             dgvUsers.EditMode = DataGridViewEditMode.EditProgrammatically;
             dgvUsers.EnableHeadersVisualStyles = false;
-            dgvUsers.Location = new Point(263, 31);
+            dgvUsers.Location = new Point(263, 35);
             dgvUsers.Name = "dgvUsers";
-            dgvUsers.Size = new Size(777, 472);
+            dgvUsers.Size = new Size(777, 468);
             dgvUsers.TabIndex = 4;
             // 
             // pnlSideBar
@@ -136,9 +138,9 @@
             pnlSideBar.Controls.Add(txtFullName);
             pnlSideBar.Controls.Add(txtUserName);
             pnlSideBar.Dock = DockStyle.Left;
-            pnlSideBar.Location = new Point(3, 31);
+            pnlSideBar.Location = new Point(3, 35);
             pnlSideBar.Name = "pnlSideBar";
-            pnlSideBar.Size = new Size(260, 472);
+            pnlSideBar.Size = new Size(260, 468);
             pnlSideBar.TabIndex = 1;
             // 
             // lblNumber
@@ -306,18 +308,29 @@
             // 
             panel1.BackColor = Color.FromArgb(43, 77, 95);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(lblHeading);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1037, 28);
+            panel1.Size = new Size(1037, 32);
             panel1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.registration__1_;
+            pictureBox1.Location = new Point(6, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(24, 24);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // lblHeading
             // 
             lblHeading.AutoSize = true;
             lblHeading.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblHeading.Location = new Point(31, 3);
+            lblHeading.Location = new Point(30, 5);
             lblHeading.Name = "lblHeading";
             lblHeading.Size = new Size(126, 20);
             lblHeading.TabIndex = 1;
@@ -353,6 +366,7 @@
             ((System.ComponentModel.ISupportInitialize)connectionBindingSource).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -380,5 +394,6 @@
         private Panel panel1;
         private BindingSource connectionBindingSource;
         public TabControl tpage;
+        private PictureBox pictureBox1;
     }
 }
