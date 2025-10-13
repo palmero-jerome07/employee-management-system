@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             tpage = new TabControl();
             tpageUserRegistration = new TabPage();
             dgvUsers = new DataGridView();
@@ -38,7 +37,6 @@
             lblNumber = new Label();
             lblMatch = new Label();
             cbSection = new ComboBox();
-            connectionBindingSource = new BindingSource(components);
             lblConPass = new Label();
             lblPassword = new Label();
             lblAge = new Label();
@@ -59,7 +57,6 @@
             tpageUserRegistration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             pnlSideBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)connectionBindingSource).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -93,23 +90,23 @@
             // dgvUsers
             // 
             dgvUsers.BackgroundColor = Color.FromArgb(245, 246, 250);
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dgvUsers.DefaultCellStyle = dataGridViewCellStyle4;
             dgvUsers.Dock = DockStyle.Fill;
             dgvUsers.EditMode = DataGridViewEditMode.EditProgrammatically;
             dgvUsers.EnableHeadersVisualStyles = false;
@@ -165,17 +162,12 @@
             // 
             // cbSection
             // 
-            cbSection.DataSource = connectionBindingSource;
             cbSection.DropDownStyle = ComboBoxStyle.DropDownList;
             cbSection.FormattingEnabled = true;
             cbSection.Location = new Point(23, 147);
             cbSection.Name = "cbSection";
             cbSection.Size = new Size(205, 23);
             cbSection.TabIndex = 2;
-            // 
-            // connectionBindingSource
-            // 
-            connectionBindingSource.DataSource = typeof(CRUD.connection);
             // 
             // lblConPass
             // 
@@ -363,7 +355,6 @@
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             pnlSideBar.ResumeLayout(false);
             pnlSideBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)connectionBindingSource).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
