@@ -10,8 +10,6 @@ namespace EmployeeManagementSystem
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
-
-
         public frmMotherForm()
         {
             InitializeComponent();
@@ -20,7 +18,6 @@ namespace EmployeeManagementSystem
             lblAge.Text = frmLoginForm.age;
             lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + frmLoginForm.fullname;
         }
-
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -167,11 +164,6 @@ namespace EmployeeManagementSystem
             }
         }
 
-        private void lblFooter_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMaximize_MouseEnter(object sender, EventArgs e)
         {
             btnMaximize.BackColor = Color.Silver;
@@ -191,7 +183,5 @@ namespace EmployeeManagementSystem
         {
             btnMinimize.BackColor = Color.Transparent;
         }
-
-
     }
 }

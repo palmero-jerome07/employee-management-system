@@ -78,7 +78,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(562, 28);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // button3
             // 
@@ -187,7 +186,6 @@
             gboxInsertUpdate.TabIndex = 3;
             gboxInsertUpdate.TabStop = false;
             gboxInsertUpdate.Text = "Employee Details Manual Insert and Update";
-            gboxInsertUpdate.Enter += groupBox1_Enter;
             // 
             // btnDelete
             // 

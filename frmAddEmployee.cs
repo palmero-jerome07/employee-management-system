@@ -15,7 +15,7 @@ namespace EmployeeManagementSystem
         public frmAddEmployee()
         {
             InitializeComponent();
-            loadInputData();
+            
         }
 
         private void loadInputData()
@@ -58,12 +58,7 @@ namespace EmployeeManagementSystem
 
         private void frmAddEmployee_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            loadInputData();
         }
 
         private void btnInsertUpdate_Click(object sender, EventArgs e)
@@ -146,10 +141,6 @@ namespace EmployeeManagementSystem
             txtLocalNumber.Clear();
             txtRequestorName.Clear();
             cmbSection.Text = "";
-        }
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void btnInsertUpdate_MouseEnter(object sender, EventArgs e)

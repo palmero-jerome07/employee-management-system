@@ -114,7 +114,6 @@
             TTclose.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip4"));
             TTfooter.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip5"));
             TTinsertUpdateEmployee.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip6"));
-            lblFooter.Click += lblFooter_Click;
             // 
             // btnAddEmp
             // 

@@ -78,7 +78,6 @@ namespace EmployeeManagementSystem
             lblMasterData.Size = new Size(92, 20);
             lblMasterData.TabIndex = 0;
             lblMasterData.Text = "Master Data";
-            lblMasterData.Click += lblMasterData_Click;
             // 
             // dtgMasterData
             // 
@@ -108,7 +107,6 @@ namespace EmployeeManagementSystem
             dtgMasterData.Size = new Size(748, 295);
             dtgMasterData.TabIndex = 1;
             dtgMasterData.CellClick += dtgMasterData_CellClick;
-            dtgMasterData.CellContentClick += dtgMasterData_CellContentClick;
             dtgMasterData.RowHeaderMouseClick += dtgMasterData_RowHeaderMouseClick;
             // 
             // btnEditData
@@ -162,20 +160,10 @@ namespace EmployeeManagementSystem
             PerformLayout();
         }
 
-        private void lblMasterData_Click(object sender, EventArgs e)
-        {
-            //
-        }
 
         public void frmMasterData_Load(object sender, EventArgs e)
         {
-            string select_tblrequestorlist = "SELECT * FROM tblEmployeeData ORDER BY EmployeeNumber DESC";
-            CRUD.CRUD.RETRIEVEDTG(dtgMasterData, select_tblrequestorlist);
-        }
-
-        private void dtgMasterData_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //
+            refreshData();
         }
 
         private void dtgMasterData_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
