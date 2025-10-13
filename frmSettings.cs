@@ -148,7 +148,7 @@ namespace EmployeeManagementSystem
                 MessageBox.Show("Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearDetails();
                 CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [tblUsers] ");
-                this.Close();
+                //this.Close();
             }
             else if (result == DialogResult.No)
             {

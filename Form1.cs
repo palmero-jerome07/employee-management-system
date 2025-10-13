@@ -59,7 +59,7 @@ namespace EmployeeManagementSystem
             lblFooter.Text = $"© {DateTime.Now.Year} EMS. All rights reserved.";
         }
 
-        private void OpenChildForm(Form childform)
+        public void OpenChildForm(Form childform)
         {
             if (currentChildForm != null)
             {
