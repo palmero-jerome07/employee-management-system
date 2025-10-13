@@ -148,6 +148,7 @@ namespace EmployeeManagementSystem
             openForm.Size = new Size(275, 550);
             openForm.StartPosition = FormStartPosition.CenterScreen;
             openForm.tpage.Selecting += openForm.tpage_Selecting;
+            openForm.Text = "Register user";
             openForm.ShowDialog();
         }
     }
