@@ -82,6 +82,7 @@
             txtUsername.Location = new Point(152, 147);
             txtUsername.MaxLength = 50;
             txtUsername.Name = "txtUsername";
+            txtUsername.PlaceholderText = "Enter your username";
             txtUsername.Size = new Size(262, 23);
             txtUsername.TabIndex = 4;
             // 
@@ -91,6 +92,7 @@
             txtPassword.MaxLength = 50;
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
+            txtPassword.PlaceholderText = "Enter your password";
             txtPassword.Size = new Size(262, 23);
             txtPassword.TabIndex = 5;
             // 
