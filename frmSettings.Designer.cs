@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             tpage = new TabControl();
@@ -37,6 +38,7 @@
             lblNumber = new Label();
             lblMatch = new Label();
             cbSection = new ComboBox();
+            connectionBindingSource = new BindingSource(components);
             lblConPass = new Label();
             lblPassword = new Label();
             lblAge = new Label();
@@ -56,6 +58,7 @@
             tpageUserRegistration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             pnlSideBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)connectionBindingSource).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -100,7 +103,7 @@
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -160,11 +163,17 @@
             // 
             // cbSection
             // 
+            cbSection.DataSource = connectionBindingSource;
+            cbSection.DropDownStyle = ComboBoxStyle.DropDownList;
             cbSection.FormattingEnabled = true;
-            cbSection.Location = new Point(26, 147);
+            cbSection.Location = new Point(23, 147);
             cbSection.Name = "cbSection";
             cbSection.Size = new Size(205, 23);
             cbSection.TabIndex = 2;
+            // 
+            // connectionBindingSource
+            // 
+            connectionBindingSource.DataSource = typeof(CRUD.connection);
             // 
             // lblConPass
             // 
@@ -249,41 +258,47 @@
             // 
             // txtConfirmPassword
             // 
-            txtConfirmPassword.Location = new Point(26, 305);
+            txtConfirmPassword.Location = new Point(23, 305);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PasswordChar = '*';
+            txtConfirmPassword.PlaceholderText = "Re-enter your created password";
             txtConfirmPassword.Size = new Size(205, 23);
             txtConfirmPassword.TabIndex = 5;
             txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(26, 251);
+            txtPassword.Location = new Point(23, 251);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
+            txtPassword.PlaceholderText = "Create a strong password";
             txtPassword.Size = new Size(205, 23);
             txtPassword.TabIndex = 4;
             txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // txtAge
             // 
-            txtAge.Location = new Point(26, 198);
+            txtAge.Location = new Point(23, 198);
+            txtAge.MaxLength = 3;
             txtAge.Name = "txtAge";
+            txtAge.PlaceholderText = "Input your age";
             txtAge.Size = new Size(205, 23);
             txtAge.TabIndex = 3;
             txtAge.KeyPress += txtAge_KeyPress;
             // 
             // txtFullName
             // 
-            txtFullName.Location = new Point(26, 99);
+            txtFullName.Location = new Point(23, 99);
             txtFullName.Name = "txtFullName";
+            txtFullName.PlaceholderText = "Input your full name";
             txtFullName.Size = new Size(205, 23);
             txtFullName.TabIndex = 1;
             // 
             // txtUserName
             // 
-            txtUserName.Location = new Point(26, 50);
+            txtUserName.Location = new Point(23, 50);
             txtUserName.Name = "txtUserName";
+            txtUserName.PlaceholderText = "Create username";
             txtUserName.Size = new Size(205, 23);
             txtUserName.TabIndex = 0;
             // 
@@ -334,16 +349,14 @@
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             pnlSideBar.ResumeLayout(false);
             pnlSideBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)connectionBindingSource).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private TabControl tpage;
         private TabPage tpageUserRegistration;
-        private TabPage tpageSectionRegistration;
         private Panel pnlSideBar;
         private Label lblConPass;
         private Label lblPassword;
@@ -360,8 +373,11 @@
         private ComboBox cbSection;
         private Label lblNumber;
         private Label lblMatch;
-        private Panel panel1;
         private Label lblHeading;
         private DataGridView dgvUsers;
+        public TabPage tpageSectionRegistration;
+        private Panel panel1;
+        private BindingSource connectionBindingSource;
+        public TabControl tpage;
     }
 }
