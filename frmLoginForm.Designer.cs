@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoginForm));
             lblHeader = new Label();
             lblUsername = new Label();
             lblPassword = new Label();
@@ -210,6 +211,7 @@
             Controls.Add(lblHeader);
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmLoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";

@@ -30,6 +30,7 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSettings));
             tpage = new TabControl();
             tpageUserRegistration = new TabPage();
             dgvUsers = new DataGridView();
@@ -347,6 +348,7 @@
             ClientSize = new Size(1051, 534);
             Controls.Add(tpage);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "frmSettings";
             Text = "Settings";
