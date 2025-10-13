@@ -65,7 +65,7 @@ namespace EmployeeManagementSystem
         {
             CRUD.CRUD.RETRIEVECBO(cbSection, "SELECT [ID], [Section] FROM [tblSection] ORDER BY [Section] asc", "Section", "ID");
             CRUD.CRUD.RETRIEVEDTG(dgvUsers, "SELECT * FROM [tblUsers]");
-            cbSection.Text = "";
+            cbSection.SelectedIndex = 4; // Default to No Section (In my db it's ID 4)
 
             lblNumber.Text = "❌ Number";
             lblNumber.ForeColor = Color.Red;
@@ -87,15 +87,18 @@ namespace EmployeeManagementSystem
             {
                 MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            } else if (txtUserName.Text.Contains(" "))
+            }
+            else if (txtUserName.Text.Contains(" "))
             {
                 MessageBox.Show("Username cannot contain spaces.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }else if (txtPassword.Text.Contains(" "))
+            }
+            else if (txtPassword.Text.Contains(" "))
             {
                 MessageBox.Show("Password cannot contain spaces.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            } else if (!System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"[a-z]"))
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"[a-z]"))
             {
                 MessageBox.Show("Password must contain at least one lowercase letter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -104,11 +107,13 @@ namespace EmployeeManagementSystem
             {
                 MessageBox.Show("Password must contain at least one uppercase letter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            } else if (string.IsNullOrWhiteSpace(txtAge.Text) || int.Parse(txtAge.Text) < 18 || int.Parse(txtAge.Text) > 65)
+            }
+            else if (string.IsNullOrWhiteSpace(txtAge.Text) || int.Parse(txtAge.Text) < 18 || int.Parse(txtAge.Text) > 65)
             {
                 MessageBox.Show("Please enter a valid age between 18 and 65.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            } else if (string.IsNullOrWhiteSpace(txtFullName.Text) || txtFullName.Text.Length < 3)
+            }
+            else if (string.IsNullOrWhiteSpace(txtFullName.Text) || txtFullName.Text.Length < 3)
             {
                 MessageBox.Show("Please enter a valid full name with at least 3 characters.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -132,7 +137,7 @@ namespace EmployeeManagementSystem
             {
                 MessageBox.Show("Username already exists. Please choose a different username.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            } 
+            }
             DialogResult result = MessageBox.Show("Are you sure you want to register?", "Confirmation",
                                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -143,6 +148,7 @@ namespace EmployeeManagementSystem
                 MessageBox.Show("Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearDetails();
                 CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [tblUsers] ");
+                this.Close();
             }
             else if (result == DialogResult.No)
             {
@@ -171,6 +177,15 @@ namespace EmployeeManagementSystem
         private void btnExecute_MouseLeave(object sender, EventArgs e)
         {
             btnExecute.BackColor = Color.FromArgb(26, 188, 156);
+        }
+
+        public void tpage_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            // used disable to select the 'tpageSectionRegistration' tab
+            if (e.TabPage == tpage.TabPages[1])
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

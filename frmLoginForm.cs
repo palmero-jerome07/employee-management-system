@@ -141,5 +141,14 @@ namespace EmployeeManagementSystem
                 Common.SendMessage(Handle, Common.WM_NCLBUTTONDOWN, Common.HT_CAPTION, 0);
             }
         }
+
+        private void linklblCreateAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSettings openForm = new frmSettings();
+            openForm.Size = new Size(275, 550);
+            openForm.StartPosition = FormStartPosition.CenterScreen;
+            openForm.tpage.Selecting += openForm.tpage_Selecting;
+            openForm.ShowDialog();
+        }
     }
 }

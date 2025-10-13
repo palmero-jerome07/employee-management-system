@@ -119,6 +119,7 @@
             linklblCreateAccount.TabIndex = 7;
             linklblCreateAccount.TabStop = true;
             linklblCreateAccount.Text = "Create an account";
+            linklblCreateAccount.LinkClicked += linklblCreateAccount_LinkClicked;
             // 
             // pnlHead
             // 
@@ -191,7 +192,7 @@
             btnClose.MouseEnter += btnClose_MouseEnter;
             btnClose.MouseLeave += btnClose_MouseLeave;
             // 
-            // LoginForm
+            // frmLoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -207,7 +208,7 @@
             Controls.Add(lblHeader);
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "LoginForm";
+            Name = "frmLoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
