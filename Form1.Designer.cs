@@ -31,6 +31,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMotherForm));
             pnlSideMenu = new Panel();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
             btnSettings = new Button();
             lblFooter = new Label();
             btnAddEmp = new Button();
@@ -57,6 +59,7 @@
             TTversion = new ToolTip(components);
             TTfooter = new ToolTip(components);
             pnlSideMenu.SuspendLayout();
+            toolStrip1.SuspendLayout();
             pnlInformation.SuspendLayout();
             pnlTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -68,6 +71,7 @@
             resources.ApplyResources(pnlSideMenu, "pnlSideMenu");
             pnlSideMenu.BackColor = Color.FromArgb(43, 77, 95);
             pnlSideMenu.BorderStyle = BorderStyle.FixedSingle;
+            pnlSideMenu.Controls.Add(toolStrip1);
             pnlSideMenu.Controls.Add(btnSettings);
             pnlSideMenu.Controls.Add(lblFooter);
             pnlSideMenu.Controls.Add(btnAddEmp);
@@ -82,6 +86,29 @@
             TTminimize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip4"));
             TTversion.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip5"));
             TTmaximize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip6"));
+            // 
+            // toolStrip1
+            // 
+            resources.ApplyResources(toolStrip1, "toolStrip1");
+            toolStrip1.BackColor = SystemColors.ActiveCaption;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1 });
+            toolStrip1.Name = "toolStrip1";
+            TTversion.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip"));
+            TTclose.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip1"));
+            TTmasterData.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip2"));
+            TTminimize.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip3"));
+            TTmaximize.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip4"));
+            TTfooter.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip5"));
+            TTinsertUpdateEmployee.SetToolTip(toolStrip1, resources.GetString("toolStrip1.ToolTip6"));
+            // 
+            // toolStripButton1
+            // 
+            resources.ApplyResources(toolStripButton1, "toolStripButton1");
+            toolStripButton1.BackColor = Color.Transparent;
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = Properties.Resources.logout;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // btnSettings
             // 
@@ -392,6 +419,8 @@
             Load += frmMotherForm_Load;
             pnlSideMenu.ResumeLayout(false);
             pnlSideMenu.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             pnlInformation.ResumeLayout(false);
             pnlInformation.PerformLayout();
             pnlTitleBar.ResumeLayout(false);
@@ -430,5 +459,7 @@
         private Label lblFullName;
         private Label lblWelcome;
         private Button btnSettings;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
     }
 }

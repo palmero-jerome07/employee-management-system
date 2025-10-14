@@ -183,5 +183,28 @@ namespace EmployeeManagementSystem
         {
             btnMinimize.BackColor = Color.Transparent;
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show(
+            "Are you sure you want to log out?",
+            "Logout Confirmation",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+    );
+
+            if (confirm == DialogResult.Yes)
+            {
+                // Close the current form
+                this.Hide();
+
+                // Go back to the login form
+                frmLoginForm login = new frmLoginForm();
+                login.ShowDialog();
+
+                // Close this form after logout
+                this.Close();
+            }
+        }
     }
 }
