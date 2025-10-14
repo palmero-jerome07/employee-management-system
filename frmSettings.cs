@@ -64,7 +64,7 @@ namespace EmployeeManagementSystem
         private void frmSettings_Load_1(object sender, EventArgs e)
         {
             CRUD.CRUD.RETRIEVECBO(cbSection, "SELECT [ID], [Section] FROM [tblSection] ORDER BY [Section] asc", "Section", "ID");
-            CRUD.CRUD.RETRIEVEDTG(dgvUsers, "SELECT * FROM [tblUsers]");
+            CRUD.CRUD.RETRIEVEDTG(dgvUsers, "SELECT * FROM [tblUsers] ORDER BY id ASC");
             cbSection.SelectedIndex = 4; // Default to No Section (In my db it's ID 4)
 
             lblNumber.Text = "❌ Number";
@@ -147,7 +147,7 @@ namespace EmployeeManagementSystem
                 CRUD.CRUD.CUD(query);
                 MessageBox.Show("Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearDetails();
-                CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [tblUsers] ");
+                CRUD.CRUD.RETRIEVEDTG(dgvUsers, "Select * From [tblUsers] ORDER BY id ASC");
                 //this.Close();
             }
             else if (result == DialogResult.No)
