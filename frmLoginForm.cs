@@ -78,13 +78,13 @@ namespace EmployeeManagementSystem
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username or password.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Invalid username or password. 2", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("No user found.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Invalid username or password. 1", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
             }
