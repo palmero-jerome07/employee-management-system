@@ -12,7 +12,6 @@ namespace EmployeeManagementSystem.CRUD
         static string dbPath = @"D:\LOCALDB\EMS.accdb";
         public static string conString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dbPath}";
 
-
         public static OleDbConnection mysqldb()
         {
             return new OleDbConnection(conString);
@@ -20,4 +19,13 @@ namespace EmployeeManagementSystem.CRUD
         public static OleDbConnection con = mysqldb();
 
     }
+
+    /*
+     * tblEmployeeData = "EmployeeNumber","RequestorName", "RequestorEmail", "LocalNumber", "Section"
+     * tblSection = "Section"
+     * tblUsers = "Username", "Password", "Age (number)", "Section", "FullName"
+     */
+
+
+
 }
