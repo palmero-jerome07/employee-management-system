@@ -376,11 +376,13 @@
     <value>21, 87</value>
   </data>
   <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>519, 88</value>
+    <value>544, 132</value>
   </data>
   <data name="lblWelcome.Text" xml:space="preserve">
-    <value>WELCOME TO EMPLOYEE 
-MANAGEMENT SYSTEM</value>
+    <value>WELCOME TO THE 
+EMPLOYEE MANAGEMENT 
+SYSTEM
+</value>
   </data>
   <data name="pnlStage.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 51</value>

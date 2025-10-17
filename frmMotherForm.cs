@@ -1,4 +1,4 @@
-using static System.Collections.Specialized.BitVector32;
+﻿using static System.Collections.Specialized.BitVector32;
 using System.Net.Mail;
 
 namespace EmployeeManagementSystem
@@ -13,8 +13,8 @@ namespace EmployeeManagementSystem
         public frmMotherForm()
         {
             InitializeComponent();
-            lblFullName.Text = frmLoginForm.fullname;
-            lblSection.Text = frmLoginForm.section;
+            lblFullName.Text = "👤 " + frmLoginForm.fullname;
+            lblSection.Text = "📁 " + frmLoginForm.section;
             lblAge.Text = frmLoginForm.age;
             lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + frmLoginForm.fullname;
         }
@@ -34,10 +34,12 @@ namespace EmployeeManagementSystem
             if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
+                lblWelcome.Text = "WELCOME TO EMPLOYEE MANAGEMENT SYSTEM, " + frmLoginForm.fullname;
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + frmLoginForm.fullname;
             }
         }
 
@@ -56,7 +58,7 @@ namespace EmployeeManagementSystem
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            lblFooter.Text = $"� {DateTime.Now.Year} EMS. All rights reserved.";
+            lblFooter.Text = $"© {DateTime.Now.Year} EMS. All rights reserved.";
         }
 
         public void OpenChildForm(Form childform)
