@@ -138,12 +138,12 @@ namespace EmployeeManagementSystem
 
         private void pnlStage_MouseEnter(object sender, EventArgs e)
         {
-            pnlStage.BackColor = Color.FromArgb(245, 246, 250);
+            //pnlStage.BackColor = Color.FromArgb(245, 246, 250);
         }
 
         private void pnlStage_MouseLeave(object sender, EventArgs e)
         {
-            pnlStage.BackColor = Color.FromArgb(255, 255, 255);
+            //pnlStage.BackColor = Color.FromArgb(255, 255, 255);
         }
 
         private void LblHeader_Click(object sender, MouseEventArgs e)
@@ -182,6 +182,16 @@ namespace EmployeeManagementSystem
         private void btnMinimize_MouseLeave(object sender, EventArgs e)
         {
             btnMinimize.BackColor = Color.Transparent;
+        }
+
+        private void btnSettings_MouseEnter(object sender, EventArgs e)
+        {
+            btnSettings.BackColor = Color.FromArgb(14, 102, 85);
+        }
+
+        private void btnSettings_MouseLeave(object sender, EventArgs e)
+        {
+            btnSettings.BackColor = Color.FromArgb(26, 188, 156);
         }
     }
 }

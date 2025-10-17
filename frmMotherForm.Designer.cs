@@ -90,7 +90,7 @@
             resources.ApplyResources(btnSettings, "btnSettings");
             btnSettings.BackColor = Color.FromArgb(60, 173, 150);
             btnSettings.Cursor = Cursors.Hand;
-            btnSettings.ForeColor = Color.White;
+            btnSettings.ForeColor = Color.Black;
             btnSettings.Image = Properties.Resources.settings;
             btnSettings.Name = "btnSettings";
             TTmasterData.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
@@ -103,6 +103,8 @@
             TTsettings.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip7"));
             btnSettings.UseVisualStyleBackColor = false;
             btnSettings.Click += btnSettings_Click;
+            btnSettings.MouseEnter += btnSettings_MouseEnter;
+            btnSettings.MouseLeave += btnSettings_MouseLeave;
             // 
             // lblFooter
             // 
@@ -124,7 +126,7 @@
             resources.ApplyResources(btnAddEmp, "btnAddEmp");
             btnAddEmp.BackColor = Color.FromArgb(60, 173, 150);
             btnAddEmp.Cursor = Cursors.Hand;
-            btnAddEmp.ForeColor = Color.White;
+            btnAddEmp.ForeColor = Color.Black;
             btnAddEmp.Name = "btnAddEmp";
             TTmasterData.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip"));
             TTminimize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip1"));
@@ -144,7 +146,7 @@
             resources.ApplyResources(btnMasterData, "btnMasterData");
             btnMasterData.BackColor = Color.FromArgb(60, 173, 150);
             btnMasterData.Cursor = Cursors.Hand;
-            btnMasterData.ForeColor = Color.White;
+            btnMasterData.ForeColor = Color.Black;
             btnMasterData.Name = "btnMasterData";
             TTmasterData.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip"));
             TTminimize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip1"));

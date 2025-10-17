@@ -146,7 +146,7 @@
             // 
             lblNumber.AutoSize = true;
             lblNumber.ForeColor = Color.White;
-            lblNumber.Location = new Point(41, 364);
+            lblNumber.Location = new Point(41, 350);
             lblNumber.Name = "lblNumber";
             lblNumber.Size = new Size(63, 15);
             lblNumber.TabIndex = 15;
@@ -156,7 +156,7 @@
             // 
             lblMatch.AutoSize = true;
             lblMatch.ForeColor = Color.White;
-            lblMatch.Location = new Point(41, 342);
+            lblMatch.Location = new Point(41, 328);
             lblMatch.Name = "lblMatch";
             lblMatch.Size = new Size(53, 15);
             lblMatch.TabIndex = 14;
@@ -166,7 +166,7 @@
             // 
             cbSection.DropDownStyle = ComboBoxStyle.DropDownList;
             cbSection.FormattingEnabled = true;
-            cbSection.Location = new Point(23, 147);
+            cbSection.Location = new Point(23, 133);
             cbSection.Name = "cbSection";
             cbSection.Size = new Size(205, 23);
             cbSection.TabIndex = 2;
@@ -176,7 +176,7 @@
             lblConPass.AutoSize = true;
             lblConPass.Font = new Font("Segoe UI", 11.25F);
             lblConPass.ForeColor = Color.White;
-            lblConPass.Location = new Point(26, 284);
+            lblConPass.Location = new Point(26, 270);
             lblConPass.Name = "lblConPass";
             lblConPass.Size = new Size(161, 20);
             lblConPass.TabIndex = 12;
@@ -187,7 +187,7 @@
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Segoe UI", 11.25F);
             lblPassword.ForeColor = Color.White;
-            lblPassword.Location = new Point(26, 230);
+            lblPassword.Location = new Point(26, 216);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(70, 20);
             lblPassword.TabIndex = 11;
@@ -198,7 +198,7 @@
             lblAge.AutoSize = true;
             lblAge.Font = new Font("Segoe UI", 11.25F);
             lblAge.ForeColor = Color.White;
-            lblAge.Location = new Point(26, 177);
+            lblAge.Location = new Point(26, 163);
             lblAge.Name = "lblAge";
             lblAge.Size = new Size(36, 20);
             lblAge.TabIndex = 10;
@@ -209,7 +209,7 @@
             lblSection.AutoSize = true;
             lblSection.Font = new Font("Segoe UI", 11.25F);
             lblSection.ForeColor = Color.White;
-            lblSection.Location = new Point(26, 127);
+            lblSection.Location = new Point(26, 113);
             lblSection.Name = "lblSection";
             lblSection.Size = new Size(58, 20);
             lblSection.TabIndex = 9;
@@ -220,18 +220,18 @@
             lblFullName.AutoSize = true;
             lblFullName.Font = new Font("Segoe UI", 11.25F);
             lblFullName.ForeColor = Color.White;
-            lblFullName.Location = new Point(26, 78);
+            lblFullName.Location = new Point(26, 64);
             lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(69, 20);
+            lblFullName.Size = new Size(73, 20);
             lblFullName.TabIndex = 8;
-            lblFullName.Text = "Fullname";
+            lblFullName.Text = "Full name";
             // 
             // lblUsername
             // 
             lblUsername.AutoSize = true;
             lblUsername.Font = new Font("Segoe UI", 11.25F);
             lblUsername.ForeColor = Color.White;
-            lblUsername.Location = new Point(26, 29);
+            lblUsername.Location = new Point(26, 15);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(75, 20);
             lblUsername.TabIndex = 7;
@@ -242,7 +242,7 @@
             btnExecute.BackColor = Color.FromArgb(60, 173, 150);
             btnExecute.FlatStyle = FlatStyle.Flat;
             btnExecute.ForeColor = Color.Black;
-            btnExecute.Location = new Point(156, 398);
+            btnExecute.Location = new Point(156, 384);
             btnExecute.Name = "btnExecute";
             btnExecute.Size = new Size(75, 26);
             btnExecute.TabIndex = 6;
@@ -254,7 +254,7 @@
             // 
             // txtConfirmPassword
             // 
-            txtConfirmPassword.Location = new Point(23, 305);
+            txtConfirmPassword.Location = new Point(23, 291);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PasswordChar = '*';
             txtConfirmPassword.PlaceholderText = "Confirm your password";
@@ -264,7 +264,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(23, 251);
+            txtPassword.Location = new Point(23, 237);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderText = "Create a strong password";
@@ -274,7 +274,7 @@
             // 
             // txtAge
             // 
-            txtAge.Location = new Point(23, 198);
+            txtAge.Location = new Point(23, 184);
             txtAge.MaxLength = 2;
             txtAge.Name = "txtAge";
             txtAge.PlaceholderText = "Input your age";
@@ -284,7 +284,7 @@
             // 
             // txtFullName
             // 
-            txtFullName.Location = new Point(23, 99);
+            txtFullName.Location = new Point(23, 85);
             txtFullName.Name = "txtFullName";
             txtFullName.PlaceholderText = "Input your full name";
             txtFullName.Size = new Size(205, 23);
@@ -292,7 +292,7 @@
             // 
             // txtUserName
             // 
-            txtUserName.Location = new Point(23, 50);
+            txtUserName.Location = new Point(23, 36);
             txtUserName.Name = "txtUserName";
             txtUserName.PlaceholderText = "Create username";
             txtUserName.Size = new Size(205, 23);
