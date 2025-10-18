@@ -37,6 +37,7 @@
             btnMasterData = new Button();
             panel1 = new Panel();
             pnlInformation = new Panel();
+            picBox1 = new PictureBox();
             lblAge = new Label();
             lblSection = new Label();
             lblFullName = new Label();
@@ -59,6 +60,7 @@
             TTsettings = new ToolTip(components);
             pnlSideMenu.SuspendLayout();
             pnlInformation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             pnlTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlStage.SuspendLayout();
@@ -178,6 +180,7 @@
             // 
             resources.ApplyResources(pnlInformation, "pnlInformation");
             pnlInformation.BackColor = Color.FromArgb(43, 77, 95);
+            pnlInformation.Controls.Add(picBox1);
             pnlInformation.Controls.Add(lblAge);
             pnlInformation.Controls.Add(lblSection);
             pnlInformation.Controls.Add(lblFullName);
@@ -191,9 +194,25 @@
             TTclose.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip6"));
             TTminimize.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip7"));
             // 
+            // picBox1
+            // 
+            resources.ApplyResources(picBox1, "picBox1");
+            picBox1.Image = Properties.Resources.account_circle_64dp_E3E3E3;
+            picBox1.Name = "picBox1";
+            picBox1.TabStop = false;
+            TTversion.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip"));
+            TTclose.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip1"));
+            TTmasterData.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip2"));
+            TTminimize.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip3"));
+            TTmaximize.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip4"));
+            TTinsertUpdateEmployee.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip5"));
+            TTfooter.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip6"));
+            TTsettings.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip7"));
+            // 
             // lblAge
             // 
             resources.ApplyResources(lblAge, "lblAge");
+            lblAge.AutoEllipsis = true;
             lblAge.ForeColor = Color.White;
             lblAge.Name = "lblAge";
             TTclose.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip"));
@@ -417,6 +436,7 @@
             pnlSideMenu.PerformLayout();
             pnlInformation.ResumeLayout(false);
             pnlInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picBox1).EndInit();
             pnlTitleBar.ResumeLayout(false);
             pnlTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -454,5 +474,6 @@
         private Label lblWelcome;
         private Button btnSettings;
         private ToolTip TTsettings;
+        private PictureBox picBox1;
     }
 }
