@@ -90,9 +90,10 @@
             // btnSettings
             // 
             resources.ApplyResources(btnSettings, "btnSettings");
-            btnSettings.BackColor = Color.FromArgb(60, 173, 150);
+            btnSettings.BackColor = Color.FromArgb(43, 77, 95);
             btnSettings.Cursor = Cursors.Hand;
-            btnSettings.ForeColor = Color.Black;
+            btnSettings.FlatAppearance.BorderSize = 0;
+            btnSettings.ForeColor = Color.White;
             btnSettings.Image = Properties.Resources.settings;
             btnSettings.Name = "btnSettings";
             TTmasterData.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
@@ -126,9 +127,10 @@
             // btnAddEmp
             // 
             resources.ApplyResources(btnAddEmp, "btnAddEmp");
-            btnAddEmp.BackColor = Color.FromArgb(60, 173, 150);
+            btnAddEmp.BackColor = Color.FromArgb(43, 77, 95);
             btnAddEmp.Cursor = Cursors.Hand;
-            btnAddEmp.ForeColor = Color.Black;
+            btnAddEmp.FlatAppearance.BorderSize = 0;
+            btnAddEmp.ForeColor = Color.White;
             btnAddEmp.Name = "btnAddEmp";
             TTmasterData.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip"));
             TTminimize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip1"));
@@ -146,9 +148,10 @@
             // btnMasterData
             // 
             resources.ApplyResources(btnMasterData, "btnMasterData");
-            btnMasterData.BackColor = Color.FromArgb(60, 173, 150);
+            btnMasterData.BackColor = Color.FromArgb(43, 77, 95);
             btnMasterData.Cursor = Cursors.Hand;
-            btnMasterData.ForeColor = Color.Black;
+            btnMasterData.FlatAppearance.BorderSize = 0;
+            btnMasterData.ForeColor = Color.White;
             btnMasterData.Name = "btnMasterData";
             TTmasterData.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip"));
             TTminimize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip1"));
