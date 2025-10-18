@@ -13,9 +13,9 @@ namespace EmployeeManagementSystem
         public frmMotherForm()
         {
             InitializeComponent();
-            lblFullName.Text = "👤 " + frmLoginForm.fullname;
-            lblSection.Text = "📁 " + frmLoginForm.section;
-            lblAge.Text = frmLoginForm.age;
+            lblFullName.Text = "🙍‍ " + frmLoginForm.fullname;
+            lblSection.Text = "💼   " + frmLoginForm.section;
+            lblAge.Text = "🎂   " + frmLoginForm.age;
             lblWelcome.Text = "WELCOME TO EMPLOYEE \nMANAGEMENT SYSTEM, \n" + frmLoginForm.fullname;
         }
 
