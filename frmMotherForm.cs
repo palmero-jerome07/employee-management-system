@@ -92,7 +92,7 @@ namespace EmployeeManagementSystem
         }
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1120, 422);
+            this.Size = new Size(1120, 600);
             OpenChildForm(new frmSettings());
         }
 
