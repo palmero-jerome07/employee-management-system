@@ -19,6 +19,7 @@ namespace EmployeeManagementSystem
                 lblFullName.Text = "<FULL NAME>";
                 lblSection.Text = "<SECTION>";
                 lblAge.Text = "<AGE>";
+                return;
             }
             lblFullName.Text = frmLoginForm.fullname;
             lblSection.Text = frmLoginForm.section;

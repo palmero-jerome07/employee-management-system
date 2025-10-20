@@ -197,13 +197,23 @@ namespace EmployeeManagementSystem
         {
             string TemplatePath = @"D:\LOCALDB\template.xlsx";
             string SavePath = @"D:\LOCALDB\template.xlsx"; ;
-            ExportCellFromDGV.ExportFromTemplate(TemplatePath,SavePath,
+            ExportCellFromDGV.ExportFromTemplate(TemplatePath, SavePath,
         "B1", dgvUsers.Rows[e.RowIndex].Cells["FullName"].Value,
         "H1", dgvUsers.Rows[e.RowIndex].Cells["Section"].Value,
         "B2", dgvUsers.Rows[e.RowIndex].Cells["Username"].Value,
         "H2", dgvUsers.Rows[e.RowIndex].Cells["Age"].Value,
         "A32", frmLoginForm.fullname,
         "A33", DateTime.Now.ToString("yyyy-MM-dd"));
+        }
+
+        private void btnDownload_MouseEnter(object sender, EventArgs e)
+        {
+            btnDownload.BackColor = Color.FromArgb(14, 102, 85);
+        }
+
+        private void btnDownload_MouseLeave(object sender, EventArgs e)
+        {
+            btnDownload.BackColor = Color.FromArgb(26, 188, 156);
         }
     }
 }

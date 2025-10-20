@@ -104,7 +104,7 @@
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
@@ -339,7 +339,7 @@
             tpageSectionRegistration.Location = new Point(4, 24);
             tpageSectionRegistration.Name = "tpageSectionRegistration";
             tpageSectionRegistration.Padding = new Padding(3);
-            tpageSectionRegistration.Size = new Size(1043, 476);
+            tpageSectionRegistration.Size = new Size(1043, 473);
             tpageSectionRegistration.TabIndex = 1;
             tpageSectionRegistration.Text = "Section Registration";
             // 
@@ -356,6 +356,8 @@
             btnDownload.Text = "Download";
             btnDownload.UseVisualStyleBackColor = false;
             btnDownload.Click += btnDownload_Click;
+            btnDownload.MouseEnter += btnDownload_MouseEnter;
+            btnDownload.MouseLeave += btnDownload_MouseLeave;
             // 
             // frmSettings
             // 

@@ -58,6 +58,9 @@
             TTversion = new ToolTip(components);
             TTfooter = new ToolTip(components);
             TTsettings = new ToolTip(components);
+            TTfullname = new ToolTip(components);
+            TTsection = new ToolTip(components);
+            TTage = new ToolTip(components);
             pnlSideMenu.SuspendLayout();
             pnlInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
@@ -79,13 +82,16 @@
             pnlSideMenu.Controls.Add(pnlInformation);
             pnlSideMenu.Name = "pnlSideMenu";
             TTmasterData.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip"));
-            TTfooter.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip1"));
-            TTversion.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip2"));
-            TTinsertUpdateEmployee.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip3"));
-            TTsettings.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip4"));
-            TTmaximize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip5"));
-            TTclose.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip6"));
-            TTminimize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip7"));
+            TTfullname.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip1"));
+            TTage.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip2"));
+            TTsection.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip3"));
+            TTmaximize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip4"));
+            TTminimize.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip5"));
+            TTfooter.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip6"));
+            TTclose.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip7"));
+            TTversion.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip8"));
+            TTinsertUpdateEmployee.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip9"));
+            TTsettings.SetToolTip(pnlSideMenu, resources.GetString("pnlSideMenu.ToolTip10"));
             // 
             // btnSettings
             // 
@@ -96,14 +102,17 @@
             btnSettings.ForeColor = Color.White;
             btnSettings.Image = Properties.Resources.setting;
             btnSettings.Name = "btnSettings";
-            TTmasterData.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
-            TTminimize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip1"));
-            TTmaximize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip2"));
+            TTsection.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
+            TTfooter.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip1"));
+            TTsettings.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip2"));
             TTinsertUpdateEmployee.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip3"));
             TTversion.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip4"));
             TTclose.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip5"));
-            TTfooter.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip6"));
-            TTsettings.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip7"));
+            TTmasterData.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip6"));
+            TTminimize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip7"));
+            TTmaximize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip8"));
+            TTage.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip9"));
+            TTfullname.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip10"));
             btnSettings.UseVisualStyleBackColor = false;
             btnSettings.Click += btnSettings_Click;
             btnSettings.MouseEnter += btnSettings_MouseEnter;
@@ -115,14 +124,17 @@
             lblFooter.BackColor = Color.Transparent;
             lblFooter.ForeColor = SystemColors.AppWorkspace;
             lblFooter.Name = "lblFooter";
-            TTclose.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip"));
-            TTmasterData.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip1"));
-            TTminimize.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip2"));
-            TTmaximize.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip4"));
-            TTversion.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip5"));
-            TTfooter.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip6"));
-            TTsettings.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip7"));
+            TTfooter.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip"));
+            TTsettings.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip2"));
+            TTversion.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip3"));
+            TTclose.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip4"));
+            TTmasterData.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip5"));
+            TTminimize.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip6"));
+            TTsection.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip7"));
+            TTage.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip8"));
+            TTfullname.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip9"));
+            TTmaximize.SetToolTip(lblFooter, resources.GetString("lblFooter.ToolTip10"));
             // 
             // btnAddEmp
             // 
@@ -133,14 +145,17 @@
             btnAddEmp.ForeColor = Color.White;
             btnAddEmp.Image = Properties.Resources.person;
             btnAddEmp.Name = "btnAddEmp";
-            TTmasterData.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip"));
-            TTminimize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip1"));
-            TTmaximize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip2"));
+            TTsection.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip"));
+            TTfooter.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip1"));
+            TTsettings.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip2"));
             TTinsertUpdateEmployee.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip3"));
             TTversion.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip4"));
             TTclose.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip5"));
-            TTfooter.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip6"));
-            TTsettings.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip7"));
+            TTmasterData.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip6"));
+            TTminimize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip7"));
+            TTmaximize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip8"));
+            TTage.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip9"));
+            TTfullname.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip10"));
             btnAddEmp.UseVisualStyleBackColor = false;
             btnAddEmp.Click += btnAddEmp_Click;
             btnAddEmp.MouseEnter += btnAddEmp_MouseEnter;
@@ -155,14 +170,17 @@
             btnMasterData.ForeColor = Color.White;
             btnMasterData.Image = Properties.Resources.folder1;
             btnMasterData.Name = "btnMasterData";
-            TTmasterData.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip"));
-            TTminimize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip1"));
-            TTmaximize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip2"));
+            TTsection.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip"));
+            TTfooter.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip1"));
+            TTsettings.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip2"));
             TTinsertUpdateEmployee.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip3"));
             TTversion.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip4"));
             TTclose.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip5"));
-            TTfooter.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip6"));
-            TTsettings.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip7"));
+            TTmasterData.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip6"));
+            TTminimize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip7"));
+            TTmaximize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip8"));
+            TTage.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip9"));
+            TTfullname.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip10"));
             btnMasterData.UseVisualStyleBackColor = false;
             btnMasterData.Click += btnMasterData_Click;
             btnMasterData.MouseEnter += btnMasterData_MouseEnter;
@@ -173,13 +191,16 @@
             resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
             TTmasterData.SetToolTip(panel1, resources.GetString("panel1.ToolTip"));
-            TTfooter.SetToolTip(panel1, resources.GetString("panel1.ToolTip1"));
-            TTversion.SetToolTip(panel1, resources.GetString("panel1.ToolTip2"));
-            TTinsertUpdateEmployee.SetToolTip(panel1, resources.GetString("panel1.ToolTip3"));
-            TTsettings.SetToolTip(panel1, resources.GetString("panel1.ToolTip4"));
-            TTmaximize.SetToolTip(panel1, resources.GetString("panel1.ToolTip5"));
-            TTclose.SetToolTip(panel1, resources.GetString("panel1.ToolTip6"));
-            TTminimize.SetToolTip(panel1, resources.GetString("panel1.ToolTip7"));
+            TTfullname.SetToolTip(panel1, resources.GetString("panel1.ToolTip1"));
+            TTage.SetToolTip(panel1, resources.GetString("panel1.ToolTip2"));
+            TTsection.SetToolTip(panel1, resources.GetString("panel1.ToolTip3"));
+            TTmaximize.SetToolTip(panel1, resources.GetString("panel1.ToolTip4"));
+            TTminimize.SetToolTip(panel1, resources.GetString("panel1.ToolTip5"));
+            TTfooter.SetToolTip(panel1, resources.GetString("panel1.ToolTip6"));
+            TTclose.SetToolTip(panel1, resources.GetString("panel1.ToolTip7"));
+            TTversion.SetToolTip(panel1, resources.GetString("panel1.ToolTip8"));
+            TTinsertUpdateEmployee.SetToolTip(panel1, resources.GetString("panel1.ToolTip9"));
+            TTsettings.SetToolTip(panel1, resources.GetString("panel1.ToolTip10"));
             // 
             // pnlInformation
             // 
@@ -191,13 +212,16 @@
             pnlInformation.Controls.Add(lblFullName);
             pnlInformation.Name = "pnlInformation";
             TTmasterData.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip"));
-            TTfooter.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip1"));
-            TTversion.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip2"));
-            TTinsertUpdateEmployee.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip3"));
-            TTsettings.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip4"));
-            TTmaximize.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip5"));
-            TTclose.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip6"));
-            TTminimize.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip7"));
+            TTfullname.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip1"));
+            TTage.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip2"));
+            TTsection.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip3"));
+            TTmaximize.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip4"));
+            TTminimize.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip5"));
+            TTfooter.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip6"));
+            TTclose.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip7"));
+            TTversion.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip8"));
+            TTinsertUpdateEmployee.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip9"));
+            TTsettings.SetToolTip(pnlInformation, resources.GetString("pnlInformation.ToolTip10"));
             // 
             // picBox1
             // 
@@ -205,14 +229,17 @@
             picBox1.Image = Properties.Resources.account_circle_64dp_E3E3E3;
             picBox1.Name = "picBox1";
             picBox1.TabStop = false;
-            TTversion.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip"));
-            TTclose.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip1"));
-            TTmasterData.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip2"));
-            TTminimize.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip3"));
-            TTmaximize.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip4"));
-            TTinsertUpdateEmployee.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip5"));
-            TTfooter.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip6"));
-            TTsettings.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip7"));
+            TTsection.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip"));
+            TTfooter.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip1"));
+            TTsettings.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip2"));
+            TTinsertUpdateEmployee.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip3"));
+            TTversion.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip4"));
+            TTclose.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip5"));
+            TTmasterData.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip6"));
+            TTminimize.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip7"));
+            TTage.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip8"));
+            TTfullname.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip9"));
+            TTmaximize.SetToolTip(picBox1, resources.GetString("picBox1.ToolTip10"));
             // 
             // lblAge
             // 
@@ -220,14 +247,17 @@
             lblAge.AutoEllipsis = true;
             lblAge.ForeColor = Color.White;
             lblAge.Name = "lblAge";
-            TTclose.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip"));
-            TTmasterData.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip1"));
-            TTminimize.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip2"));
-            TTmaximize.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip4"));
-            TTversion.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip5"));
-            TTfooter.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip6"));
-            TTsettings.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip7"));
+            TTfooter.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip"));
+            TTsettings.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip2"));
+            TTversion.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip3"));
+            TTclose.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip4"));
+            TTmasterData.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip5"));
+            TTminimize.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip6"));
+            TTsection.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip7"));
+            TTage.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip8"));
+            TTfullname.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip9"));
+            TTmaximize.SetToolTip(lblAge, resources.GetString("lblAge.ToolTip10"));
             // 
             // lblSection
             // 
@@ -235,14 +265,17 @@
             lblSection.AutoEllipsis = true;
             lblSection.ForeColor = Color.White;
             lblSection.Name = "lblSection";
-            TTclose.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip"));
-            TTmasterData.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip1"));
-            TTminimize.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip2"));
-            TTmaximize.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip4"));
-            TTversion.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip5"));
-            TTfooter.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip6"));
-            TTsettings.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip7"));
+            TTfooter.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip"));
+            TTsettings.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip2"));
+            TTversion.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip3"));
+            TTclose.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip4"));
+            TTmasterData.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip5"));
+            TTminimize.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip6"));
+            TTsection.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip7"));
+            TTage.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip8"));
+            TTfullname.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip9"));
+            TTmaximize.SetToolTip(lblSection, resources.GetString("lblSection.ToolTip10"));
             // 
             // lblFullName
             // 
@@ -250,14 +283,17 @@
             lblFullName.AutoEllipsis = true;
             lblFullName.ForeColor = Color.White;
             lblFullName.Name = "lblFullName";
-            TTclose.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip"));
-            TTmasterData.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip1"));
-            TTminimize.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip2"));
-            TTmaximize.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip4"));
-            TTversion.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip5"));
-            TTfooter.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip6"));
-            TTsettings.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip7"));
+            TTfooter.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip"));
+            TTsettings.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip2"));
+            TTversion.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip3"));
+            TTclose.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip4"));
+            TTmasterData.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip5"));
+            TTminimize.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip6"));
+            TTsection.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip7"));
+            TTage.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip8"));
+            TTfullname.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip9"));
+            TTmaximize.SetToolTip(lblFullName, resources.GetString("lblFullName.ToolTip10"));
             // 
             // pnlTitleBar
             // 
@@ -272,13 +308,16 @@
             pnlTitleBar.Controls.Add(btnMinimize);
             pnlTitleBar.Name = "pnlTitleBar";
             TTmasterData.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip"));
-            TTfooter.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip1"));
-            TTversion.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip2"));
-            TTinsertUpdateEmployee.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip3"));
-            TTsettings.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip4"));
-            TTmaximize.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip5"));
-            TTclose.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip6"));
-            TTminimize.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip7"));
+            TTfullname.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip1"));
+            TTage.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip2"));
+            TTsection.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip3"));
+            TTmaximize.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip4"));
+            TTminimize.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip5"));
+            TTfooter.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip6"));
+            TTclose.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip7"));
+            TTversion.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip8"));
+            TTinsertUpdateEmployee.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip9"));
+            TTsettings.SetToolTip(pnlTitleBar, resources.GetString("pnlTitleBar.ToolTip10"));
             pnlTitleBar.MouseDown += pnlTitleBar_MouseDown;
             // 
             // label1
@@ -288,28 +327,34 @@
             label1.Cursor = Cursors.Help;
             label1.ForeColor = SystemColors.AppWorkspace;
             label1.Name = "label1";
-            TTclose.SetToolTip(label1, resources.GetString("label1.ToolTip"));
-            TTmasterData.SetToolTip(label1, resources.GetString("label1.ToolTip1"));
-            TTminimize.SetToolTip(label1, resources.GetString("label1.ToolTip2"));
-            TTmaximize.SetToolTip(label1, resources.GetString("label1.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(label1, resources.GetString("label1.ToolTip4"));
-            TTversion.SetToolTip(label1, resources.GetString("label1.ToolTip5"));
-            TTfooter.SetToolTip(label1, resources.GetString("label1.ToolTip6"));
-            TTsettings.SetToolTip(label1, resources.GetString("label1.ToolTip7"));
+            TTfooter.SetToolTip(label1, resources.GetString("label1.ToolTip"));
+            TTsettings.SetToolTip(label1, resources.GetString("label1.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(label1, resources.GetString("label1.ToolTip2"));
+            TTversion.SetToolTip(label1, resources.GetString("label1.ToolTip3"));
+            TTclose.SetToolTip(label1, resources.GetString("label1.ToolTip4"));
+            TTmasterData.SetToolTip(label1, resources.GetString("label1.ToolTip5"));
+            TTminimize.SetToolTip(label1, resources.GetString("label1.ToolTip6"));
+            TTsection.SetToolTip(label1, resources.GetString("label1.ToolTip7"));
+            TTage.SetToolTip(label1, resources.GetString("label1.ToolTip8"));
+            TTfullname.SetToolTip(label1, resources.GetString("label1.ToolTip9"));
+            TTmaximize.SetToolTip(label1, resources.GetString("label1.ToolTip10"));
             // 
             // pictureBox1
             // 
             resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
-            TTversion.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip"));
-            TTclose.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip1"));
-            TTmasterData.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip2"));
-            TTminimize.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip3"));
-            TTmaximize.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip4"));
-            TTinsertUpdateEmployee.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip5"));
-            TTfooter.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip6"));
-            TTsettings.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip7"));
+            TTsection.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip"));
+            TTfooter.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip1"));
+            TTsettings.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip2"));
+            TTinsertUpdateEmployee.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip3"));
+            TTversion.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip4"));
+            TTclose.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip5"));
+            TTmasterData.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip6"));
+            TTminimize.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip7"));
+            TTage.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip8"));
+            TTfullname.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip9"));
+            TTmaximize.SetToolTip(pictureBox1, resources.GetString("pictureBox1.ToolTip10"));
             pictureBox1.MouseDown += pictureBox1_Click;
             // 
             // lblHeader
@@ -317,14 +362,17 @@
             resources.ApplyResources(lblHeader, "lblHeader");
             lblHeader.ForeColor = Color.White;
             lblHeader.Name = "lblHeader";
-            TTclose.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip"));
-            TTmasterData.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip1"));
-            TTminimize.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip2"));
-            TTmaximize.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip4"));
-            TTversion.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip5"));
-            TTfooter.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip6"));
-            TTsettings.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip7"));
+            TTfooter.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip"));
+            TTsettings.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip2"));
+            TTversion.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip3"));
+            TTclose.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip4"));
+            TTmasterData.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip5"));
+            TTminimize.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip6"));
+            TTsection.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip7"));
+            TTage.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip8"));
+            TTfullname.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip9"));
+            TTmaximize.SetToolTip(lblHeader, resources.GetString("lblHeader.ToolTip10"));
             lblHeader.MouseDown += LblHeader_Click;
             // 
             // btnClose
@@ -334,14 +382,17 @@
             btnClose.Cursor = Cursors.Hand;
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.Name = "btnClose";
-            TTmasterData.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip"));
-            TTminimize.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip1"));
-            TTmaximize.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip2"));
+            TTsection.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip"));
+            TTfooter.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip1"));
+            TTsettings.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip2"));
             TTinsertUpdateEmployee.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip3"));
             TTversion.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip4"));
             TTclose.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip5"));
-            TTfooter.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip6"));
-            TTsettings.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip7"));
+            TTmasterData.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip6"));
+            TTminimize.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip7"));
+            TTmaximize.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip8"));
+            TTage.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip9"));
+            TTfullname.SetToolTip(btnClose, resources.GetString("btnClose.ToolTip10"));
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += btnClose_Click;
             btnClose.MouseEnter += btnClose_MouseEnter;
@@ -354,14 +405,17 @@
             btnMaximize.Cursor = Cursors.Hand;
             btnMaximize.FlatAppearance.BorderSize = 0;
             btnMaximize.Name = "btnMaximize";
-            TTmasterData.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip"));
-            TTminimize.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip1"));
-            TTmaximize.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip2"));
+            TTsection.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip"));
+            TTfooter.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip1"));
+            TTsettings.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip2"));
             TTinsertUpdateEmployee.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip3"));
             TTversion.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip4"));
             TTclose.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip5"));
-            TTfooter.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip6"));
-            TTsettings.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip7"));
+            TTmasterData.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip6"));
+            TTminimize.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip7"));
+            TTmaximize.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip8"));
+            TTage.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip9"));
+            TTfullname.SetToolTip(btnMaximize, resources.GetString("btnMaximize.ToolTip10"));
             btnMaximize.UseVisualStyleBackColor = false;
             btnMaximize.Click += btnMaximize_Click;
             btnMaximize.MouseEnter += btnMaximize_MouseEnter;
@@ -374,14 +428,17 @@
             btnMinimize.Cursor = Cursors.Hand;
             btnMinimize.FlatAppearance.BorderSize = 0;
             btnMinimize.Name = "btnMinimize";
-            TTmasterData.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip"));
-            TTminimize.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip1"));
-            TTmaximize.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip2"));
+            TTsection.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip"));
+            TTfooter.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip1"));
+            TTsettings.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip2"));
             TTinsertUpdateEmployee.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip3"));
             TTversion.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip4"));
             TTclose.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip5"));
-            TTfooter.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip6"));
-            TTsettings.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip7"));
+            TTmasterData.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip6"));
+            TTminimize.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip7"));
+            TTmaximize.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip8"));
+            TTage.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip9"));
+            TTfullname.SetToolTip(btnMinimize, resources.GetString("btnMinimize.ToolTip10"));
             btnMinimize.UseVisualStyleBackColor = false;
             btnMinimize.Click += btnMinimize_Click;
             btnMinimize.MouseEnter += btnMinimize_MouseEnter;
@@ -394,13 +451,16 @@
             pnlStage.Controls.Add(lblWelcome);
             pnlStage.Name = "pnlStage";
             TTmasterData.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip"));
-            TTfooter.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip1"));
-            TTversion.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip2"));
-            TTinsertUpdateEmployee.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip3"));
-            TTsettings.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip4"));
-            TTmaximize.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip5"));
-            TTclose.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip6"));
-            TTminimize.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip7"));
+            TTfullname.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip1"));
+            TTage.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip2"));
+            TTsection.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip3"));
+            TTmaximize.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip4"));
+            TTminimize.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip5"));
+            TTfooter.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip6"));
+            TTclose.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip7"));
+            TTversion.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip8"));
+            TTinsertUpdateEmployee.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip9"));
+            TTsettings.SetToolTip(pnlStage, resources.GetString("pnlStage.ToolTip10"));
             pnlStage.MouseEnter += pnlStage_MouseEnter;
             pnlStage.MouseLeave += pnlStage_MouseLeave;
             // 
@@ -409,14 +469,17 @@
             resources.ApplyResources(lblWelcome, "lblWelcome");
             lblWelcome.ForeColor = Color.FromArgb(43, 77, 95);
             lblWelcome.Name = "lblWelcome";
-            TTclose.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip"));
-            TTmasterData.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip1"));
-            TTminimize.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip2"));
-            TTmaximize.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip3"));
-            TTinsertUpdateEmployee.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip4"));
-            TTversion.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip5"));
-            TTfooter.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip6"));
-            TTsettings.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip7"));
+            TTfooter.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip"));
+            TTsettings.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip1"));
+            TTinsertUpdateEmployee.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip2"));
+            TTversion.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip3"));
+            TTclose.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip4"));
+            TTmasterData.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip5"));
+            TTminimize.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip6"));
+            TTsection.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip7"));
+            TTage.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip8"));
+            TTfullname.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip9"));
+            TTmaximize.SetToolTip(lblWelcome, resources.GetString("lblWelcome.ToolTip10"));
             // 
             // frmMotherForm
             // 
@@ -428,14 +491,17 @@
             Controls.Add(pnlTitleBar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmMotherForm";
-            TTmaximize.SetToolTip(this, resources.GetString("$this.ToolTip"));
-            TTfooter.SetToolTip(this, resources.GetString("$this.ToolTip1"));
-            TTsettings.SetToolTip(this, resources.GetString("$this.ToolTip2"));
-            TTinsertUpdateEmployee.SetToolTip(this, resources.GetString("$this.ToolTip3"));
-            TTversion.SetToolTip(this, resources.GetString("$this.ToolTip4"));
-            TTclose.SetToolTip(this, resources.GetString("$this.ToolTip5"));
-            TTmasterData.SetToolTip(this, resources.GetString("$this.ToolTip6"));
-            TTminimize.SetToolTip(this, resources.GetString("$this.ToolTip7"));
+            TTminimize.SetToolTip(this, resources.GetString("$this.ToolTip"));
+            TTage.SetToolTip(this, resources.GetString("$this.ToolTip1"));
+            TTfullname.SetToolTip(this, resources.GetString("$this.ToolTip2"));
+            TTsection.SetToolTip(this, resources.GetString("$this.ToolTip3"));
+            TTfooter.SetToolTip(this, resources.GetString("$this.ToolTip4"));
+            TTsettings.SetToolTip(this, resources.GetString("$this.ToolTip5"));
+            TTinsertUpdateEmployee.SetToolTip(this, resources.GetString("$this.ToolTip6"));
+            TTversion.SetToolTip(this, resources.GetString("$this.ToolTip7"));
+            TTclose.SetToolTip(this, resources.GetString("$this.ToolTip8"));
+            TTmaximize.SetToolTip(this, resources.GetString("$this.ToolTip9"));
+            TTmasterData.SetToolTip(this, resources.GetString("$this.ToolTip10"));
             Load += frmMotherForm_Load;
             pnlSideMenu.ResumeLayout(false);
             pnlSideMenu.PerformLayout();
@@ -480,5 +546,8 @@
         private Button btnSettings;
         private ToolTip TTsettings;
         private PictureBox picBox1;
+        private ToolTip TTsection;
+        private ToolTip TTage;
+        private ToolTip TTfullname;
     }
 }
