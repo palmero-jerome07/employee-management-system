@@ -13,6 +13,13 @@ namespace EmployeeManagementSystem
         public frmMotherForm()
         {
             InitializeComponent();
+
+            if (string.IsNullOrEmpty(frmLoginForm.fullname) || string.IsNullOrEmpty(frmLoginForm.section) || string.IsNullOrEmpty(frmLoginForm.age))
+            {
+                lblFullName.Text = "<FULL NAME>";
+                lblSection.Text = "<SECTION>";
+                lblAge.Text = "<AGE>";
+            }
             lblFullName.Text = frmLoginForm.fullname;
             lblSection.Text = frmLoginForm.section;
             lblAge.Text = frmLoginForm.age;

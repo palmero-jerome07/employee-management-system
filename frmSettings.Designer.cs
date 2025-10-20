@@ -71,12 +71,12 @@
             tpage.Location = new Point(0, 0);
             tpage.Name = "tpage";
             tpage.SelectedIndex = 0;
-            tpage.Size = new Size(1051, 509);
+            tpage.Size = new Size(1051, 501);
             tpage.TabIndex = 0;
             // 
             // tpageUserRegistration
             // 
-            tpageUserRegistration.BackColor = Color.FromArgb(39, 58, 74);
+            tpageUserRegistration.BackColor = Color.White;
             tpageUserRegistration.Controls.Add(dgvUsers);
             tpageUserRegistration.Controls.Add(pnlSideBar);
             tpageUserRegistration.Controls.Add(panel1);
@@ -85,7 +85,7 @@
             tpageUserRegistration.Location = new Point(4, 24);
             tpageUserRegistration.Name = "tpageUserRegistration";
             tpageUserRegistration.Padding = new Padding(3);
-            tpageUserRegistration.Size = new Size(1043, 481);
+            tpageUserRegistration.Size = new Size(1043, 473);
             tpageUserRegistration.TabIndex = 0;
             tpageUserRegistration.Text = "User Registration";
             // 
@@ -115,7 +115,7 @@
             dgvUsers.Location = new Point(263, 35);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.ReadOnly = true;
-            dgvUsers.Size = new Size(777, 443);
+            dgvUsers.Size = new Size(777, 435);
             dgvUsers.TabIndex = 4;
             dgvUsers.CellDoubleClick += dgvUsers_CellDoubleClick;
             // 
@@ -141,7 +141,7 @@
             pnlSideBar.Dock = DockStyle.Left;
             pnlSideBar.Location = new Point(3, 35);
             pnlSideBar.Name = "pnlSideBar";
-            pnlSideBar.Size = new Size(260, 443);
+            pnlSideBar.Size = new Size(260, 435);
             pnlSideBar.TabIndex = 1;
             // 
             // lblNumber
@@ -339,7 +339,7 @@
             tpageSectionRegistration.Location = new Point(4, 24);
             tpageSectionRegistration.Name = "tpageSectionRegistration";
             tpageSectionRegistration.Padding = new Padding(3);
-            tpageSectionRegistration.Size = new Size(1043, 481);
+            tpageSectionRegistration.Size = new Size(1043, 476);
             tpageSectionRegistration.TabIndex = 1;
             tpageSectionRegistration.Text = "Section Registration";
             // 
@@ -349,9 +349,9 @@
             btnDownload.BackColor = Color.FromArgb(60, 173, 150);
             btnDownload.FlatStyle = FlatStyle.Flat;
             btnDownload.ForeColor = Color.Black;
-            btnDownload.Location = new Point(966, 508);
+            btnDownload.Location = new Point(966, 503);
             btnDownload.Name = "btnDownload";
-            btnDownload.Size = new Size(75, 23);
+            btnDownload.Size = new Size(75, 27);
             btnDownload.TabIndex = 3;
             btnDownload.Text = "Download";
             btnDownload.UseVisualStyleBackColor = false;
@@ -362,6 +362,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
+            BackColor = Color.White;
             ClientSize = new Size(1051, 534);
             Controls.Add(btnDownload);
             Controls.Add(tpage);
@@ -369,7 +370,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "frmSettings";
-            Padding = new Padding(0, 0, 0, 25);
+            Padding = new Padding(0, 0, 0, 33);
             Text = "Settings";
             Load += frmSettings_Load_1;
             tpage.ResumeLayout(false);
