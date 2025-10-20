@@ -383,7 +383,7 @@
     <value>Perpetua Titling MT, 27.75pt, style=Bold</value>
   </data>
   <data name="lblWelcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 87</value>
+    <value>4, 87</value>
   </data>
   <data name="lblWelcome.Size" type="System.Drawing.Size, System.Drawing">
     <value>544, 132</value>
