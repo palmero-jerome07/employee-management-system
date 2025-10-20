@@ -108,22 +108,26 @@ namespace EmployeeManagementSystem
 
         private void btnMasterData_MouseEnter(object sender, EventArgs e)
         {
-            btnMasterData.BackColor = Color.FromArgb(14, 102, 85);
+            btnMasterData.BackColor = Color.FromArgb(60, 173, 150);
+            btnMasterData.ForeColor = Color.Black;
         }
 
         private void btnMasterData_MouseLeave(object sender, EventArgs e)
         {
             btnMasterData.BackColor = Color.FromArgb(43, 77, 95);
+            btnMasterData.ForeColor = Color.White;
         }
 
         private void btnAddEmp_MouseEnter(object sender, EventArgs e)
         {
-            btnAddEmp.BackColor = Color.FromArgb(14, 102, 85);
+            btnAddEmp.BackColor = Color.FromArgb(60, 173, 150);
+            btnAddEmp.ForeColor = Color.Black;
         }
 
         private void btnAddEmp_MouseLeave(object sender, EventArgs e)
         {
             btnAddEmp.BackColor = Color.FromArgb(43, 77, 95);
+            btnAddEmp.ForeColor = Color.White;
         }
 
         private void btnClose_MouseEnter(object sender, EventArgs e)
@@ -188,12 +192,14 @@ namespace EmployeeManagementSystem
 
         private void btnSettings_MouseEnter(object sender, EventArgs e)
         {
-            btnSettings.BackColor = Color.FromArgb(14, 102, 85);
+            btnSettings.BackColor = Color.FromArgb(60, 173, 150);
+            btnSettings.ForeColor = Color.Black;
         }
 
         private void btnSettings_MouseLeave(object sender, EventArgs e)
         {
             btnSettings.BackColor = Color.FromArgb(43, 77, 95);
+            btnSettings.ForeColor = Color.White;
         }
     }
 }

@@ -51,6 +51,7 @@
             txtFullName = new TextBox();
             txtUserName = new TextBox();
             panel1 = new Panel();
+            btnDownload = new Button();
             pictureBox1 = new PictureBox();
             lblHeading = new Label();
             tpageSectionRegistration = new TabPage();
@@ -116,6 +117,7 @@
             dgvUsers.ReadOnly = true;
             dgvUsers.Size = new Size(777, 468);
             dgvUsers.TabIndex = 4;
+            dgvUsers.CellDoubleClick += dgvUsers_CellDoubleClick;
             // 
             // pnlSideBar
             // 
@@ -302,6 +304,7 @@
             // 
             panel1.BackColor = Color.FromArgb(43, 77, 95);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(btnDownload);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(lblHeading);
             panel1.Dock = DockStyle.Top;
@@ -309,6 +312,20 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1037, 32);
             panel1.TabIndex = 3;
+            // 
+            // btnDownload
+            // 
+            btnDownload.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnDownload.BackColor = Color.FromArgb(60, 173, 150);
+            btnDownload.FlatStyle = FlatStyle.Popup;
+            btnDownload.ForeColor = Color.Black;
+            btnDownload.Location = new Point(942, 3);
+            btnDownload.Name = "btnDownload";
+            btnDownload.Size = new Size(75, 23);
+            btnDownload.TabIndex = 3;
+            btnDownload.Text = "Download";
+            btnDownload.UseVisualStyleBackColor = false;
+            btnDownload.Click += btnDownload_Click;
             // 
             // pictureBox1
             // 
@@ -390,5 +407,6 @@
         private BindingSource connectionBindingSource;
         public TabControl tpage;
         private PictureBox pictureBox1;
+        private Button btnDownload;
     }
 }

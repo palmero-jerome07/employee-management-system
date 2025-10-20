@@ -94,7 +94,7 @@
             btnSettings.Cursor = Cursors.Hand;
             btnSettings.FlatAppearance.BorderSize = 0;
             btnSettings.ForeColor = Color.White;
-            btnSettings.Image = Properties.Resources.settings;
+            btnSettings.Image = Properties.Resources.setting;
             btnSettings.Name = "btnSettings";
             TTmasterData.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip"));
             TTminimize.SetToolTip(btnSettings, resources.GetString("btnSettings.ToolTip1"));
@@ -131,6 +131,7 @@
             btnAddEmp.Cursor = Cursors.Hand;
             btnAddEmp.FlatAppearance.BorderSize = 0;
             btnAddEmp.ForeColor = Color.White;
+            btnAddEmp.Image = Properties.Resources.person;
             btnAddEmp.Name = "btnAddEmp";
             TTmasterData.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip"));
             TTminimize.SetToolTip(btnAddEmp, resources.GetString("btnAddEmp.ToolTip1"));
@@ -152,6 +153,7 @@
             btnMasterData.Cursor = Cursors.Hand;
             btnMasterData.FlatAppearance.BorderSize = 0;
             btnMasterData.ForeColor = Color.White;
+            btnMasterData.Image = Properties.Resources.folder1;
             btnMasterData.Name = "btnMasterData";
             TTmasterData.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip"));
             TTminimize.SetToolTip(btnMasterData, resources.GetString("btnMasterData.ToolTip1"));

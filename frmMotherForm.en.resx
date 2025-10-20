@@ -138,7 +138,7 @@
     <value>189, 46</value>
   </data>
   <data name="btnSettings.Text" xml:space="preserve">
-    <value>  SETTINGS      </value>
+    <value>  SETTINGS         </value>
   </data>
   <data name="btnSettings.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -155,20 +155,6 @@
   <data name="btnAddEmp.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
   </data>
-  <data name="btnAddEmp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGlSURBVFhH7Va7
-        SkQxFBwRCxst10awVDs/wdLKTsRPsNDO1xdYq5W4im+wtvA3fPSCWomFaGPhi4FcyA4nyd6be1kEBwaW
-        m3POJDmzSYA/ikkA6wAOHPl7QoOawDCAMwDfAH6E/HYKYEiT6gLFbw1h5U1Tk+DKVSzEY03OBXtubXuI
-        jK3VExuGSIprWiQHdLoKpNjWIjnYNwRS3NMiOeh5C2ioMib8AjCuRXLBQ0aFQjzS5DrAw4WHjIopr5s6
-        iAgWPgm0g9vOlTcm7oOeWPUuo5Umev4PxZT7b+8AuAhwG8AygD5NzsGMc7aaLsR7AANapAr6AWwaAjHe
-        ARjVQlVxaAjE+AxgRIu4O+EVwKwOxLBoCKQ4r0UcPt34uQ6EwKfXiyEQ45NrmYUihibtClVWv6VFPJSe
-        wJUhkOKSl8+eF9se4nvMEw9GQooLXj4Np+MWd72cDnwYwSn6O8CV0XDF4VTEPHrf+Fwb83I6wEAVSDHm
-        8CKmaw+UPXxI7lpLCzmUnsAggEtDJMXQG/DNjZd6JfMymXOO1gsnxGkt4kBP0HDBnvcUv8eoYg6Qzubz
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnAddEmp.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 207</value>
   </data>
@@ -176,7 +162,8 @@
     <value>189, 46</value>
   </data>
   <data name="btnAddEmp.Text" xml:space="preserve">
-    <value> ADD EMPLOYEE</value>
+    <value>  ADD EMPLOYEE
+</value>
   </data>
   <data name="btnAddEmp.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -192,19 +179,6 @@
   </data>
   <data name="btnMasterData.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="btnMasterData.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGDSURBVFhH7Ze/
-        K4VRGMc/TJhQssiCbCgLg9WmSNxNSkkZZLL4A2Q32AwyGUzIpKysSgllIxZSRPToOfV67nNv99x7bpT7
-        rU+9vef58e2873vOeaGm0tQNDBag2Qan1gTwWYRtm5Bay07TLO9Ar01KqXYz5ZPApTGxY5OqrX7gwzEx
-        H0mfLSxaAO6AR4cHYFjjdp3HEcuz6f2tAycwy6HGebNQDnmaBlaUVWDfSRqySSWqUb+qp2IGPG0ZAxfA
-        CNAKtETQpPXWsgbmgM0CrAN1QCfw6sxELOHxyQsY7vHmBGYZ0yQxZMdicQ3YIMuZzkIbMBXJDHBcqQFh
-        SRPLUQNwW6kB4QY4jSSnDfdSGCgH2UdEYdGqGfhzBmRtyUtKSSEDsorKujL7WwZ+yCal5H8YOAKu9PoE
-        OM+MBQMbeoyTly9PtmAM90A9MKqbmuz3A5nxYKCobNEYXoAOYFFPRz26CYXxqhsQ5Fgeru3WXpKBa6do
-        KsZtM09yrLK/Wynoso1q8vQF8kUhBGXnS+sAAAAASUVORK5CYII=
-</value>
   </data>
   <data name="btnMasterData.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 161</value>
