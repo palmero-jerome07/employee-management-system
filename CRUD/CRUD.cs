@@ -69,7 +69,7 @@ namespace EmployeeManagementSystem.CRUD
                 return true;
             }
             else
-            {
+            { 
                 con.Close();
                 return false;
 

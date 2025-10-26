@@ -50,7 +50,7 @@ namespace EmployeeManagementSystem
             }
             else
             {
-                string sql = $"SELECT [FullName], [Section], [Age], [Username], [Password] FROM tblUsers WHERE Username = '{username}' AND Password = '{password}'";
+                string sql = $"SELECT [FullName], [Section], [Age], [Username], [Password] FROM [tblUsers] WHERE [Username] = '{username}' AND [Password] = '{password}'";
                 bool isAuthenticated = CRUD.CRUD.RETRIEVESINGLE(sql);
 
                 string dbEmail, dbPassword;
