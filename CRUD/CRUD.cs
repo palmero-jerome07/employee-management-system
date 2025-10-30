@@ -55,7 +55,7 @@ namespace EmployeeManagementSystem.CRUD
             }
             da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
-            dt = new DataTable();
+            dt = new DataTable(); 
             da.Fill(dt);
 
             {
@@ -66,7 +66,7 @@ namespace EmployeeManagementSystem.CRUD
             if (dt.Rows.Count > 0)
             {
                 con.Close();
-                return true;
+                return true; 
             }
             else
             { 
