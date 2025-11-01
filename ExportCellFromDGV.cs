@@ -42,7 +42,7 @@ namespace EmployeeManagementSystem
                     string cellValue = cellValuePairs[i + 1]?.ToString() ?? "";
                     worksheet.Range[cellAddress].Value = cellValue;
                 }
-                string path = savePath.Replace(".xlsx", DateTime.Now.ToString("MMddyyyy") + ".xlsx");
+                string path = savePath.Replace(".xlsx", DateTime.Now.ToString("MM-dd-yyyy") + ".xlsx");
 
                 // Save as new file (or overwrite if same path)
                 workbook.SaveAs(path);
