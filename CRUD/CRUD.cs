@@ -72,7 +72,7 @@ namespace EmployeeManagementSystem.CRUD
             { 
                 con.Close();
                 return false;
-
+                 
             }
         }
         public static bool RETRIEVECBO(ComboBox cbo, string SQL, string displayMember, string valueMember)
