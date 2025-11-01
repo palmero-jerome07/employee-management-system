@@ -190,12 +190,23 @@ namespace EmployeeManagementSystem
 
         private void btnDownload_Click(object sender, EventArgs e)
         {
-            ExportDgv.ExportToExcel(dgvUsers, "ExportedData_" + DateTime.Now.ToString("MM-dd-yyyy"));
-        }
+            DialogResult result = MessageBox.Show("Do you want to export the data to Excel?", "Export to Excel",
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.No) return;
+
+            ExportDgv.ExportToExcel(dgvUsers, "ExportedData_" + DateTime.Now.ToString("MM-dd-yyyy"));
+
+        }
         private void dgvUsers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            string TemplatePath = @"D:\LOCALDB\template.xlsx";
+
+            DialogResult result = MessageBox.Show("Do you want to export this user's data to Excel?", "Export to Excel",
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            if (result == DialogResult.No) return;
+
+                string TemplatePath = @"D:\LOCALDB\template.xlsx";
             string SavePath = @"D:\LOCALDB\template.xlsx"; ;
             ExportCellFromDGV.ExportFromTemplate(TemplatePath, SavePath,
         "B1", dgvUsers.Rows[e.RowIndex].Cells["FullName"].Value,
