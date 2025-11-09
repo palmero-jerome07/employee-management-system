@@ -146,6 +146,8 @@ namespace EmployeeManagementSystem
         {
             frmSettings openForm = new frmSettings();
             openForm.Size = new Size(275, 550);
+            openForm.btnDownload.Visible = false;
+            openForm.Padding = new Padding(0, 0, 0, 0);
             openForm.StartPosition = FormStartPosition.CenterScreen;
             openForm.tpage.Selecting += openForm.tpage_Selecting;
             openForm.Text = "Register user";
