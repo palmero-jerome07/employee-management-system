@@ -25,7 +25,4 @@ namespace EmployeeManagementSystem.CRUD
      * tblSection = "Section"
      * tblUsers = "Username", "Password", "Age (number)", "Section", "FullName"
      */
-
-
-
 }
