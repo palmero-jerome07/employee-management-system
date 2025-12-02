@@ -10,6 +10,7 @@ namespace EmployeeManagementSystem.CRUD
 {
     public static class CRUD
     {
+        //
         public static OleDbConnection con = connection.mysqldb();
         public static OleDbCommand cmd = new OleDbCommand();
         public static OleDbDataAdapter da = new OleDbDataAdapter();

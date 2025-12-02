@@ -207,7 +207,7 @@ namespace EmployeeManagementSystem
             if (result == DialogResult.No) return;
 
                 string TemplatePath = @"D:\LOCALDB\template.xlsx";
-            string SavePath = @"D:\LOCALDB\dataSaved_.xlsx"; ;
+            string SavePath = @"D:\LOCALDB\template.xlsx"; ;
             ExportCellFromDGV.ExportFromTemplate(TemplatePath, SavePath,
         "B1", dgvUsers.Rows[e.RowIndex].Cells["FullName"].Value,
         "H1", dgvUsers.Rows[e.RowIndex].Cells["Section"].Value,
