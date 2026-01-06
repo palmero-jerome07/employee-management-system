@@ -21,6 +21,7 @@ namespace EmployeeManagementSystem.CRUD
 
         public static bool RETRIEVESINGLE(string SQL)
         {
+            //
             con.Open();
             cmd = new OleDbCommand();
             {
